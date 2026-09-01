@@ -8,9 +8,7 @@ import {
   Clock, 
   Heart, 
   ArrowRight, 
-  Flame, 
-  Users, 
-  ChefHat
+  Users
 } from 'lucide-react';
 import { MENU_ITEMS } from '../data/menuData';
 
@@ -90,13 +88,13 @@ export default function Home({ setActivePage, openConsultation }) {
             </div>
           </div>
 
-          {/* Right Hero Food Portrait Composition (No Enclosing Card Box) */}
+          {/* Right Hero Food Portrait Composition */}
           <div className="lg:col-span-5">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80"
-                alt="Authentic Hyderabadi Royal Dum Biryani"
-                className="w-full h-[520px] object-cover filter contrast-105"
+                src="/assets/images/hero_biryani.jpg"
+                alt="Authentic Hyderabadi Zafrani Mutton Biryani in Copper Handi"
+                className="w-full h-[520px] object-cover"
               />
               <div className="pt-4 flex items-center justify-between border-t border-primary/15 mt-3">
                 <div>
@@ -153,7 +151,7 @@ export default function Home({ setActivePage, openConsultation }) {
         </div>
       </section>
 
-      {/* 3. FOOD EXPERIENCE — ASYMMETRICAL EDITORIAL STORY (NO CARDS) */}
+      {/* 3. FOOD EXPERIENCE — ASYMMETRICAL EDITORIAL STORY */}
       <section className="py-24 px-6 md:px-margin border-b border-primary/15 max-w-[1440px] mx-auto">
         <div className="max-w-3xl mb-16">
           <span className="font-sans text-xs font-bold uppercase tracking-editorial text-secondary mb-3 block">
@@ -170,11 +168,11 @@ export default function Home({ setActivePage, openConsultation }) {
         {/* Asymmetrical Grid: 1 Large Hero Story + 3 Side Editorial Stories */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
-          {/* Main Focal Food Hero (7 Cols) */}
+          {/* Main Focal Food Hero */}
           <div className="lg:col-span-7 space-y-4">
             <img
-              src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80"
-              alt="Hyderabadi Dum Biryani"
+              src="/assets/images/hero_biryani.jpg"
+              alt="Authentic Hyderabadi Zafrani Dum Biryani"
               className="w-full h-[440px] object-cover"
             />
             <div className="pt-2 flex items-baseline justify-between border-b border-primary/15 pb-4">
@@ -195,14 +193,14 @@ export default function Home({ setActivePage, openConsultation }) {
             </div>
           </div>
 
-          {/* 3 Secondary Food Stories (5 Cols) */}
+          {/* 3 Secondary Food Stories */}
           <div className="lg:col-span-5 space-y-8">
             
             {/* Story 1 */}
             <div className="flex gap-4 items-center pb-6 border-b border-primary/15">
               <img
-                src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=400&q=80"
-                alt="Nizami Charcoal Kebabs"
+                src="/assets/images/kebab_starter.jpg"
+                alt="Nizami Shikampuri Kebabs"
                 className="w-28 h-28 object-cover shrink-0"
               />
               <div>
@@ -218,8 +216,8 @@ export default function Home({ setActivePage, openConsultation }) {
             {/* Story 2 */}
             <div className="flex gap-4 items-center pb-6 border-b border-primary/15">
               <img
-                src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=400&q=80"
-                alt="Pure Veg Satvik Feast"
+                src="/assets/images/veg_specialty.jpg"
+                alt="Traditional Veg Paneer Makhani"
                 className="w-28 h-28 object-cover shrink-0"
               />
               <div>
@@ -235,7 +233,7 @@ export default function Home({ setActivePage, openConsultation }) {
             {/* Story 3 */}
             <div className="flex gap-4 items-center">
               <img
-                src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"
+                src="/assets/images/royal_dessert.jpg"
                 alt="Shahi Tukda & Warm Rabri"
                 className="w-28 h-28 object-cover shrink-0"
               />
@@ -253,7 +251,7 @@ export default function Home({ setActivePage, openConsultation }) {
         </div>
       </section>
 
-      {/* 4. WHY DEEPALI — OPEN 3-COLUMN EDITORIAL PILLARS (NO BOX CARDS) */}
+      {/* 4. WHY DEEPALI — OPEN 3-COLUMN EDITORIAL PILLARS */}
       <section className="bg-surface-container-low py-24 border-b border-primary/15">
         <div className="max-w-[1440px] mx-auto px-6 md:px-margin">
           <div className="max-w-2xl mb-16">
@@ -338,7 +336,7 @@ export default function Home({ setActivePage, openConsultation }) {
         </div>
       </section>
 
-      {/* 5. OCCASIONS SPOTLIGHT (ASYMMETRICAL FEATURE LAYOUT) */}
+      {/* 5. OCCASIONS SPOTLIGHT */}
       <section className="py-24 px-6 md:px-margin border-b border-primary/15 max-w-[1440px] mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16">
           <div>
@@ -379,8 +377,8 @@ export default function Home({ setActivePage, openConsultation }) {
             </div>
             <div className="lg:col-span-5">
               <img
-                src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80"
-                alt="Grand Wedding Catering"
+                src="/assets/images/wedding_catering.jpg"
+                alt="Grand Wedding Banquet Catering"
                 className="w-full h-80 object-cover"
               />
             </div>
@@ -427,7 +425,7 @@ export default function Home({ setActivePage, openConsultation }) {
         </div>
       </section>
 
-      {/* 6. MENU PREVIEW (APPETITE TEASER WITH DOTTED LEADERS) */}
+      {/* 6. MENU PREVIEW */}
       <section className="bg-surface-container-low py-24 border-b border-primary/15">
         <div className="max-w-[1440px] mx-auto px-6 md:px-margin">
           <div className="max-w-2xl mb-16">
@@ -478,7 +476,7 @@ export default function Home({ setActivePage, openConsultation }) {
         </div>
       </section>
 
-      {/* 7. HOW IT WORKS (MINIMALIST HORIZONTAL PROGRESSION) */}
+      {/* 7. HOW IT WORKS */}
       <section className="py-24 px-6 md:px-margin border-b border-primary/15 max-w-[1440px] mx-auto">
         <div className="max-w-2xl mb-16">
           <span className="font-sans text-xs font-bold uppercase tracking-editorial text-secondary mb-3 block">
@@ -509,7 +507,7 @@ export default function Home({ setActivePage, openConsultation }) {
         </div>
       </section>
 
-      {/* 8. CUSTOMER STORIES & REVIEWS (OPEN EDITORIAL QUOTE BLOCKS) */}
+      {/* 8. CUSTOMER STORIES & REVIEWS */}
       <section className="bg-surface-container-low py-24 border-b border-primary/15">
         <div className="max-w-[1440px] mx-auto px-6 md:px-margin">
           <div className="max-w-2xl mb-16">

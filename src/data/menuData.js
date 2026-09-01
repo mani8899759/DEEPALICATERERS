@@ -1,183 +1,126 @@
 export const MENU_CATEGORIES = [
-  { id: 'all', label: 'All Offerings' },
+  { id: 'all', label: 'All Specialties' },
   { id: 'royal-hyderabadi', label: 'Royal Hyderabadi' },
-  { id: 'north-indian', label: 'North Indian Feast' },
-  { id: 'south-indian', label: 'South Indian Classics' },
-  { id: 'live-counters', label: 'Live Chef Stations' },
-  { id: 'desserts', label: 'Royal Desserts & Beverages' }
+  { id: 'tandoor-starters', label: 'Live Tandoor & Kebabs' },
+  { id: 'satvik-veg', label: 'Satvik Vegetarian' },
+  { id: 'north-curries', label: 'North Indian Curries' },
+  { id: 'sweets-desserts', label: 'Heritage Desserts' },
 ];
 
 export const DIETARY_FILTERS = [
-  { id: 'all', label: 'All Dietary' },
-  { id: 'veg', label: 'Pure Vegetarian' },
-  { id: 'non-veg', label: 'Non-Vegetarian' },
-  { id: 'jain', label: 'Jain Special' }
+  { id: 'all', label: 'All Diets' },
+  { id: 'veg', label: 'Pure Veg' },
+  { id: 'non-veg', label: 'Non-Veg' },
+  { id: 'jain', label: 'Jain Friendly' },
 ];
 
 export const MENU_ITEMS = [
-  // Royal Hyderabadi
   {
-    id: 'h-1',
+    id: 'dish-1',
     name: 'Hyderabadi Shahi Zafrani Mutton Biryani',
     category: 'royal-hyderabadi',
     dietary: 'non-veg',
     price: 480,
     unit: 'per plate',
-    description: 'Slow dum-cooked tender mutton marinated in saffron, caramelized onions, mint, and aged basmati rice.',
-    tags: ['Bestseller', 'Chef Special', 'Royal Signature'],
-    image: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80',
-    ingredients: ['Prime Mutton', 'Kashmiri Saffron', 'Aged Basmati', 'Pure Ghee', 'Handground Spices']
+    image: '/assets/images/hero_biryani.jpg',
+    description: 'Aged long-grain basmati rice, Kashmiri saffron, and tender prime mutton slow-cooked in handis under sealed dough crusts over charcoal.',
+    tags: ['Best Seller', 'Royal Recipe', 'Charcoal Dum'],
+    ingredients: ['Prime Mutton', 'Kashmiri Saffron', '2-Year Basmati', 'Pure Desi Ghee', 'Fresh Mint']
   },
   {
-    id: 'h-2',
-    name: 'Dum Pukht Hyderabadi Veg Biryani',
-    category: 'royal-hyderabadi',
-    dietary: 'veg',
-    price: 360,
-    unit: 'per plate',
-    description: 'Seasonal garden vegetables, paneer cubes, and aromatic rice seal-cooked in hand-drawn clay handi.',
-    tags: ['Pure Veg', 'Traditional'],
-    image: 'https://images.unsplash.com/photo-1642821373181-696a54913e93?auto=format&fit=crop&w=800&q=80',
-    ingredients: ['Fresh Vegetables', 'Malai Paneer', 'Basmati', 'Saffron', 'Whole Spices']
-  },
-  {
-    id: 'h-3',
-    name: 'Mirchi Ka Salan & Double Raita',
-    category: 'royal-hyderabadi',
-    dietary: 'veg',
-    price: 120,
-    unit: 'per portion',
-    description: 'Classic Bhavnagri chillies cooked in sesame, peanut, and coconut gravy alongside rich pomegranate mint raita.',
-    tags: ['Essential Side', 'Traditional'],
-    image: 'https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=800&q=80',
-    ingredients: ['Bhavnagri Chillies', 'White Sesame', 'Peanuts', 'Desiccated Coconut', 'Curd']
-  },
-  {
-    id: 'h-4',
-    name: 'Nizami Shikampuri Kebab',
-    category: 'royal-hyderabadi',
+    id: 'dish-2',
+    name: 'Nizami Shikampuri Mutton Kebab',
+    category: 'tandoor-starters',
     dietary: 'non-veg',
     price: 380,
-    unit: 'per portion (4 pcs)',
-    description: 'Velvety minced lamb kebabs stuffed with hung curd, green chillies, and fried mint leaves, grilled over charcoal.',
-    tags: ['Royal Starter', 'Chef Special'],
-    image: 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=800&q=80',
-    ingredients: ['Fine Lamb Mince', 'Hung Curd', 'Mint', 'Green Chillies', 'Nizami Masala']
-  },
-
-  // North Indian
-  {
-    id: 'ni-1',
-    name: 'Dal Deewan-e-Khas (24-Hour Dum Dal)',
-    category: 'north-indian',
-    dietary: 'veg',
-    price: 290,
-    unit: 'per portion',
-    description: 'Black lentils slow-cooked overnight over tandoor embers, finished with white butter and fresh cream.',
-    tags: ['Signature Veg', 'Comfort Classic'],
-    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80',
-    ingredients: ['Urad Dal', 'White Butter', 'Tomato Puree', 'Kasturi Methi', 'Fresh Cream']
+    unit: 'portion (4 pcs)',
+    image: '/assets/images/kebab_starter.jpg',
+    description: 'Pan-fried melt-in-mouth spiced mutton patties stuffed with tangy yogurt, green chilies, and fresh coriander.',
+    tags: ['Chef Special', 'Starters'],
+    ingredients: ['Minced Mutton', 'Hung Curd', 'Green Chili', 'Shahi Garam Masala']
   },
   {
-    id: 'ni-2',
-    name: 'Paneer Makhani Saffron Gravy',
-    category: 'north-indian',
+    id: 'dish-3',
+    name: 'Paneer Makhani Deewan-e-Khas',
+    category: 'satvik-veg',
     dietary: 'veg',
     price: 340,
-    unit: 'per portion',
-    description: 'Char-grilled cottage cheese cubes simmered in a silky tomato butter gravy laced with Kashmiri chilli.',
-    tags: ['Crowd Favorite', 'Pure Veg'],
-    image: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&q=80',
-    ingredients: ['Farm Fresh Paneer', 'Honey', 'Ripe Tomatoes', 'Kasuri Methi', 'Butter']
+    unit: 'portion',
+    image: '/assets/images/veg_specialty.jpg',
+    description: 'Cottage cheese cubes simmered in a velvet tomato, cashew, and white butter gravy with subtle kasuri methi aromatics.',
+    tags: ['Satvik Veg', 'Mild Spiced'],
+    ingredients: ['Fresh Cottage Cheese', 'Cashew Paste', 'White Butter', 'Dried Fenugreek']
   },
   {
-    id: 'ni-3',
-    name: 'Murg Angara Tikka',
-    category: 'north-indian',
-    dietary: 'non-veg',
-    price: 420,
-    unit: 'per portion (6 pcs)',
-    description: 'Smoked chicken morsels marinated in mustard oil, red chilli paste, and roasted garlic.',
-    tags: ['Tandoor Special'],
-    image: 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=800&q=80',
-    ingredients: ['Chicken Thighs', 'Mustard Oil', 'Mathania Chilli', 'Garlic', 'Charcoal Smoke']
-  },
-
-  // South Indian Classics
-  {
-    id: 'si-1',
-    name: 'Guntur Telangana Chilly Royyala Fry (Prawns)',
-    category: 'south-indian',
-    dietary: 'non-veg',
-    price: 520,
-    unit: 'per portion',
-    description: 'Juicy tiger prawns tossed with Guntur red chillies, curry leaves, and freshly cracked black pepper.',
-    tags: ['Spicy Coastal', 'Seafood Special'],
-    image: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80',
-    ingredients: ['Tiger Prawns', 'Guntur Chillies', 'Curry Leaves', 'Pepper', 'Shallots']
-  },
-  {
-    id: 'si-2',
-    name: 'Classic Avakai & Curd Rice Station',
-    category: 'south-indian',
-    dietary: 'veg',
-    price: 180,
-    unit: 'per portion',
-    description: 'Comforting tempered curd rice with pomegranates, green chillies, served alongside 5 heritage pickles.',
-    tags: ['Heritage Essential', 'Comfort'],
-    image: 'https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80',
-    ingredients: ['Sona Masoori Rice', 'Fresh Milk Curd', 'Mustard Seeds', 'Pomegranate', 'Avakai Mango Pickle']
-  },
-
-  // Live Counters
-  {
-    id: 'lc-1',
-    name: 'Live Chat Chatpati Counter',
-    category: 'live-counters',
-    dietary: 'veg',
-    price: 250,
-    unit: 'per guest',
-    description: 'Live interactive counter offering Pani Puri (5 flavored waters), Dahi Puri, Sev Puri, and Warm Aloo Tikki Chat.',
-    tags: ['Live Chef Station', 'Interactive'],
-    image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80',
-    ingredients: ['Puri', 'Mint Water', 'Hing Water', 'Tamarind Chutney', 'Sprouted Moong']
-  },
-  {
-    id: 'lc-2',
-    name: 'Live Nizam Flambé Kebab Bar',
-    category: 'live-counters',
-    dietary: 'non-veg',
-    price: 450,
-    unit: 'per guest',
-    description: 'Live charcoal grill & flambé setup featuring Galouti Kebabs, Boti Kebabs, and Malai Tikka with rum flambé show.',
-    tags: ['Live Showpiece', 'Luxury Station'],
-    image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80',
-    ingredients: ['Mutton Galouti', 'Chicken Malai', 'Charcoal', 'Sheermal Bread', 'Mint Chutney']
-  },
-
-  // Desserts
-  {
-    id: 'd-1',
-    name: 'Shahi Tukda & Warm Rabri',
-    category: 'desserts',
+    id: 'dish-4',
+    name: 'Shahi Tukda & Warm Saffron Rabri',
+    category: 'sweets-desserts',
     dietary: 'veg',
     price: 220,
-    unit: 'per serving',
-    description: 'Ghee-crisped brioche soaked in saffron cardamom syrup, topped with thick reduced pistachios rabri and silver leaf.',
-    tags: ['Nizami Royal Dessert'],
-    image: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80',
-    ingredients: ['Brioche', 'Pure Ghee', 'Cardamom', 'Condensed Rabri', 'Silver Leaf (Vark)', 'Pistachio']
+    unit: 'serving',
+    image: '/assets/images/royal_dessert.jpg',
+    description: 'Ghee-crisped bread slices soaked in cardamom syrup and topped with thick rabri, silver foil, and stewed Turkish apricots.',
+    tags: ['Heritage Dessert', 'Sweet'],
+    ingredients: ['Full Cream Milk', 'Saffron', 'Turkish Apricots', 'Chironji Nuts']
   },
   {
-    id: 'd-2',
-    name: 'Hyderabadi Khubani Ka Meetha',
-    category: 'desserts',
+    id: 'dish-5',
+    name: 'Hyderabadi Dum Chicken Biryani',
+    category: 'royal-hyderabadi',
+    dietary: 'non-veg',
+    price: 390,
+    unit: 'per plate',
+    image: '/assets/images/menu_chicken_biryani.jpg',
+    description: 'Succulent chicken marinated overnight in fried onions, green herbs, and spices, slow-cooked with basmati rice.',
+    tags: ['Popular Choice'],
+    ingredients: ['Farm Chicken', 'Long Basmati', 'Biryani Masala', 'Golden Shallots']
+  },
+  {
+    id: 'dish-6',
+    name: 'Dal Makhani Saffron Handi',
+    category: 'north-curries',
     dietary: 'veg',
-    price: 200,
-    unit: 'per serving',
-    description: 'Traditional stewed Turkish apricots infused with rosewater, served with fresh clotted malai cream.',
-    tags: ['Heritage Dessert'],
-    image: 'https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=800&q=80',
-    ingredients: ['Dried Apricots', 'Apricot Kernels', 'Rose Water', 'Fresh Malai']
+    price: 290,
+    unit: 'portion',
+    image: '/assets/images/menu_dal_makhani.jpg',
+    description: 'Black lentils slow-cooked overnight over live coals, finished with fresh butter and farm cream.',
+    tags: ['Comfort Food', 'Classic'],
+    ingredients: ['Black Urad Dal', 'Butter', 'Fresh Tomato Puree', 'Cream']
+  },
+  {
+    id: 'dish-7',
+    name: 'Tandoori Angara Paneer Tikka',
+    category: 'tandoor-starters',
+    dietary: 'veg',
+    price: 320,
+    unit: 'portion',
+    image: '/assets/images/menu_paneer_tikka.jpg',
+    description: 'Char-grilled cottage cheese marinated in mustard oil, roasted cumin, and hung curd.',
+    tags: ['Live Counter', 'Tandoor'],
+    ingredients: ['Malai Paneer', 'Mustard Oil', 'Bell Peppers', 'Carom Seeds']
+  },
+  {
+    id: 'dish-8',
+    name: 'Khubani Ka Meetha with Clotted Malai',
+    category: 'sweets-desserts',
+    dietary: 'veg',
+    price: 210,
+    unit: 'serving',
+    image: '/assets/images/menu_apricot_delight.jpg',
+    description: 'Authentic Nizam-style stewed apricots garnished with almond kernels and fresh clotted malai.',
+    tags: ['Hyderabadi Icon'],
+    ingredients: ['Imported Apricots', 'Clotted Cream', 'Almond Seeds']
+  },
+  {
+    id: 'dish-9',
+    name: 'South Indian Satvik Banana Leaf Thali',
+    category: 'satvik-veg',
+    dietary: 'jain',
+    price: 360,
+    unit: 'per leaf thali',
+    image: '/assets/images/menu_south_thali.jpg',
+    description: 'Complete 12-item Satvik lunch spread featuring Sambar, Rasam, Avial, Kootu, and Payasam on fresh banana leaf.',
+    tags: ['Jain Option', 'Traditional'],
+    ingredients: ['Steamed Sona Masuri', 'Drumstick Sambar', 'Pepper Rasam', 'Elaneer Payasam']
   }
 ];

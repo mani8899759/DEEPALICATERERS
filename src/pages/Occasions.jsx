@@ -2,12 +2,7 @@ import React, { useState } from 'react';
 import { 
   Sparkles, 
   CheckCircle2, 
-  ShieldCheck, 
   Users, 
-  Clock, 
-  Heart, 
-  ArrowRight, 
-  UtensilsCrossed, 
   ChefHat
 } from 'lucide-react';
 
@@ -95,8 +90,8 @@ export default function Occasions({ setActivePage, openConsultation }) {
 
           <div className="lg:col-span-5">
             <img
-              src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80"
-              alt="Grand Wedding Catering Setup"
+              src="/assets/images/wedding_catering.jpg"
+              alt="Grand Wedding Banquet Catering"
               className="w-full h-[440px] object-cover"
             />
             <div className="pt-3 flex items-center justify-between text-xs font-sans text-on-surface-variant border-t border-primary/15 mt-3">
@@ -114,8 +109,8 @@ export default function Occasions({ setActivePage, openConsultation }) {
             
             <div className="lg:col-span-5 order-2 lg:order-1">
               <img
-                src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80"
-                alt="Pure Veg Satvik Feast"
+                src="/assets/images/housewarming_satvik.jpg"
+                alt="Pure Satvik Banana Leaf Feast"
                 className="w-full h-[400px] object-cover"
               />
               <div className="pt-3 flex items-center justify-between text-xs font-sans text-on-surface-variant border-t border-primary/15 mt-3">
@@ -165,7 +160,7 @@ export default function Occasions({ setActivePage, openConsultation }) {
         </div>
       </section>
 
-      {/* SECTION 3 — SMALL GATHERINGS vs LARGE BANQUETS (OPEN COMPARISON) */}
+      {/* SECTION 3 — SMALL GATHERINGS vs LARGE BANQUETS */}
       <section className="py-24 px-6 md:px-margin border-b border-primary/15 max-w-[1440px] mx-auto">
         <div className="max-w-2xl mb-16">
           <span className="font-sans text-xs font-bold uppercase tracking-editorial text-secondary mb-3 block">
@@ -234,14 +229,13 @@ export default function Occasions({ setActivePage, openConsultation }) {
         </div>
       </section>
 
-      {/* SECTION 4 — CUSTOMER CONCERN Q&A MATRIX (EXACT MATCHING REFERENCE TYPOGRAPHY) */}
+      {/* SECTION 4 — CUSTOMER CONCERN Q&A MATRIX */}
       <section className="bg-surface-container-low py-24 border-b border-primary/15">
         <div className="max-w-[1440px] mx-auto px-6 md:px-margin">
           <div className="max-w-2xl mb-16">
             <span className="font-sans text-xs font-bold uppercase tracking-editorial text-secondary mb-3 block">
               Addressing Your Key Concerns
             </span>
-            {/* Headline matching Common Questions reference typography */}
             <h2 className="font-serif text-3xl sm:text-5xl font-bold text-primary mb-4">
               Common Questions
             </h2>

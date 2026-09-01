@@ -5,9 +5,7 @@ import {
   Plus, 
   Check, 
   Info, 
-  Sparkles, 
   X, 
-  Flame, 
   RotateCcw
 } from 'lucide-react';
 import { MENU_CATEGORIES, DIETARY_FILTERS, MENU_ITEMS } from '../data/menuData';
@@ -95,7 +93,7 @@ export default function MenuDiscovery({ setActivePage, selectedMenuDraft, setSel
         </div>
       </section>
 
-      {/* 2. FEATURED DISH STORYTELLING SPOTLIGHT (NO BOXED CARD) */}
+      {/* 2. FEATURED DISH STORYTELLING SPOTLIGHT */}
       <section className="py-16 px-6 md:px-margin border-b border-primary/15 max-w-[1440px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6">
@@ -138,8 +136,8 @@ export default function MenuDiscovery({ setActivePage, selectedMenuDraft, setSel
 
           <div className="lg:col-span-6">
             <img
-              src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80"
-              alt="Shahi Zafrani Mutton Biryani"
+              src="/assets/images/hero_biryani.jpg"
+              alt="Shahi Zafrani Mutton Biryani in Copper Handi"
               className="w-full h-80 object-cover"
             />
           </div>
