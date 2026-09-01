@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Deepali Caterers - Enquiry Pending</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#f1edec",
+                        "outline-variant": "#c4c7c7",
+                        "inverse-primary": "#c8c6c5",
+                        "on-secondary-fixed": "#2b1700",
+                        "surface-dim": "#ddd9d8",
+                        "on-error": "#ffffff",
+                        "surface": "#fdf8f8",
+                        "surface-container-low": "#f7f3f2",
+                        "on-tertiary-fixed-variant": "#8e1217",
+                        "primary-fixed": "#e5e2e1",
+                        "secondary": "#785832",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#795932",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#5e411d",
+                        "surface-container-highest": "#e5e2e1",
+                        "primary-container": "#1c1b1b",
+                        "on-tertiary-fixed": "#410003",
+                        "secondary-fixed-dim": "#e9bf90",
+                        "tertiary": "#000000",
+                        "surface-container-high": "#ebe7e6",
+                        "on-surface": "#1c1b1b",
+                        "on-primary-fixed-variant": "#474646",
+                        "tertiary-container": "#410003",
+                        "on-primary-fixed": "#1c1b1b",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb3ad",
+                        "inverse-on-surface": "#f4f0ef",
+                        "secondary-container": "#fed2a2",
+                        "on-surface-variant": "#444748",
+                        "tertiary-fixed": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#e5e2e1",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#000000",
+                        "on-primary-container": "#858383",
+                        "surface-tint": "#5f5e5e",
+                        "on-tertiary": "#ffffff",
+                        "on-background": "#1c1b1b",
+                        "on-tertiary-container": "#e3524d",
+                        "outline": "#747878",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#fdf8f8",
+                        "background": "#fdf8f8",
+                        "secondary-fixed": "#ffddb9",
+                        "inverse-surface": "#313030"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "4px",
+                        "xl": "128px",
+                        "sm": "16px",
+                        "margin": "48px",
+                        "xs": "8px",
+                        "md": "32px",
+                        "gutter": "24px",
+                        "lg": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "label-caps": ["Manrope"],
+                        "headline-xl": ["Playfair Display"],
+                        "headline-xl-mobile": ["Playfair Display"],
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.15em", "fontWeight": "700" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "headline-xl-mobile": ["36px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="bg-background/95 dark:bg-background/95 backdrop-blur-sm docked full-width top-0 sticky border-b border-outline-variant dark:border-outline z-50">
+<div class="flex justify-between items-center w-full px-12 py-6 max-w-[1440px] mx-auto">
+<a class="font-display-lg text-headline-md font-bold tracking-tighter text-primary dark:text-primary-fixed-dim uppercase" href="#">DEEPALI CATERERS</a>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors hover:opacity-80 transition-opacity duration-300" href="#">Heritage</a>
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors hover:opacity-80 transition-opacity duration-300" href="#">Occasions</a>
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors hover:opacity-80 transition-opacity duration-300" href="#">Menus</a>
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors hover:opacity-80 transition-opacity duration-300" href="#">How it Works</a>
+</div>
+<div class="flex gap-4">
+<button class="font-label-caps text-label-caps uppercase border border-primary px-6 py-3 hover:bg-surface-container transition-colors">Order Catering</button>
+<button class="font-label-caps text-label-caps uppercase bg-primary text-on-primary px-6 py-3 hover:bg-primary-container transition-colors">Plan My Event</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="max-w-[1440px] mx-auto px-6 md:px-margin py-xl">
+<!-- Header Section -->
+<header class="mb-xl grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 md:col-start-1">
+<p class="font-label-caps text-label-caps text-on-surface-variant mb-4 uppercase tracking-widest">Enquiry #DC-8492</p>
+<h1 class="font-display-lg text-display-lg mb-6">The Sharma Wedding</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Our Culinary Directors are currently reviewing your request for the winter wedding celebration. We are curating a bespoke proposal that blends traditional Awadhi flavors with modern presentation.
+                </p>
+</div>
+</header>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-xl">
+<!-- Timeline Card (Span 4) -->
+<div class="md:col-span-4 bg-surface-container-low border border-outline-variant p-8 flex flex-col justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md mb-8">Planning Progress</h2>
+<div class="relative border-l border-outline-variant ml-4 pl-8 space-y-12">
+<!-- Step 1: Received -->
+<div class="relative">
+<span class="absolute -left-[41px] top-1 w-4 h-4 bg-primary rounded-full border-4 border-surface-container-low"></span>
+<h3 class="font-headline-md text-headline-md text-primary mb-1">Enquiry Received</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">October 12, 2024</p>
+</div>
+<!-- Step 2: Discussion (Active) -->
+<div class="relative">
+<span class="absolute -left-[41px] top-1 w-4 h-4 bg-surface-container-low border-2 border-primary rounded-full"></span>
+<div class="absolute -left-[35px] top-[14px] w-1 h-full bg-primary -z-10"></div>
+<h3 class="font-headline-md text-headline-md text-primary mb-1">Review &amp; Discussion</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Currently active. Expect outreach within 48 hours.</p>
+</div>
+<!-- Step 3: Proposal -->
+<div class="relative">
+<span class="absolute -left-[41px] top-1 w-4 h-4 bg-surface-container-low border-2 border-outline-variant rounded-full"></span>
+<h3 class="font-headline-md text-headline-md text-outline-variant mb-1">Tasting &amp; Proposal</h3>
+<p class="font-body-md text-body-md text-outline-variant">Pending</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Detail & Action Card (Span 8) -->
+<div class="md:col-span-8 flex flex-col gap-gutter">
+<!-- Highlights Row -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="border border-outline-variant p-6 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl mb-4 text-primary">calendar_today</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-2">DATE</span>
+<span class="font-headline-md text-headline-md">Dec 15, 2024</span>
+</div>
+<div class="border border-outline-variant p-6 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl mb-4 text-primary">groups</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-2">GUESTS</span>
+<span class="font-headline-md text-headline-md">~ 450</span>
+</div>
+<div class="border border-outline-variant p-6 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl mb-4 text-primary">location_on</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-2">VENUE</span>
+<span class="font-headline-md text-headline-md">Taj Falaknuma</span>
+</div>
+</div>
+<!-- Call to Action Banner -->
+<div class="bg-surface-container p-8 md:p-12 border border-outline-variant flex flex-col md:flex-row items-center justify-between gap-8 flex-grow">
+<div class="max-w-md">
+<h2 class="font-headline-lg text-headline-lg mb-4">Refine Your Vision</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                            While our directors review your initial notes, a brief conversation can help us align perfectly on the nuances of your menu and presentation style.
+                        </p>
+<button class="font-label-caps text-label-caps uppercase bg-primary text-on-primary px-8 py-4 hover:bg-primary-container transition-colors inline-flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">call</span>
+                            Speak with a Specialist
+                        </button>
+</div>
+<div class="w-48 h-48 md:w-64 md:h-64 relative border border-outline-variant p-2 shrink-0">
+<img alt="Consultation" class="w-full h-full object-cover grayscale opacity-90" data-alt="A close-up editorial photograph of a culinary specialist's hands holding a premium linen menu card alongside a silver pen, set against a dark rustic wooden table. High contrast, sharp focus on the texture of the linen paper, creating a high-end, bespoke hospitality atmosphere. Warm, directional lighting highlighting the details." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQQkSPYwWgIFzy4DLWOAMaQN77GXsYUA1bKQGeznsCZNkPJ7YmiuWECjS1GAL9AfD2I1H1-k0HxVvkcnC0ggEY6GGdzgiclvz52y_gNP3olK1CjSGb5nr5S5m6316aIIGE0CIrzGszD3MNT5Rwf8Hoe99Ty30capf3Sva2OTM4AHIeA5lLx6fujcxAVmb6z2c8BwBmxS5e6ICHMzipp2Z-XqF3LsxUkj_GKkElOnknuyCJvG1vQkp2WA"/>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-dim full-width border-t border-primary dark:border-outline">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-12 py-16 max-w-[1440px] mx-auto">
+<div class="md:col-span-1">
+<span class="font-display-lg text-headline-md text-primary dark:text-primary-fixed-dim uppercase">DEEPALI CATERERS</span>
+<p class="font-body-md text-body-md mt-4 text-on-surface-variant">© 2024 Deepali Caterers Hyderabad. A Legacy of Taste.</p>
+</div>
+<div class="md:col-span-3 flex flex-wrap gap-8 justify-end items-end">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim underline transition-all focus:ring-1 focus:ring-outline" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim underline transition-all focus:ring-1 focus:ring-outline" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim underline transition-all focus:ring-1 focus:ring-outline" href="#">Contact Us</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim underline transition-all focus:ring-1 focus:ring-outline" href="#">Gallery</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim underline transition-all focus:ring-1 focus:ring-outline" href="#">Sustainability</a>
+</div>
+</div>
+</footer>
+</body></html>

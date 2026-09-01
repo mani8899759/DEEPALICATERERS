@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Enforce sharp zero border-radius across all components per reference design */
+  *, ::before, ::after {
+    border-radius: 0 !important;
+  }
+
+  body {
+    background-color: #FAF7F5;
+    color: #473424;
+    font-family: 'Manrope', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif-editorial {
+    font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+    color: #473424;
+  }
+}
+
+@layer utilities {
+  /* Editorial dotted leader for menu pricing items with #473424 text color */
+  .dotted-leader {
+    background-image: radial-gradient(circle, rgba(71, 52, 36, 0.4) 1px, transparent 1.5px);
+    background-size: 8px 8px;
+    background-position: bottom;
+    background-repeat: repeat-x;
+  }
+
+  .border-editorial {
+    border-color: rgba(71, 52, 36, 0.15);
+  }
+  
+  .border-editorial-strong {
+    border-color: #473424;
+  }
+}
+
+/* Custom scrollbar matching soft warm parchment palette */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F5;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(71, 52, 36, 0.3);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #473424;
+}

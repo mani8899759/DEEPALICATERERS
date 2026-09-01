@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Menu &amp; Food Discovery | Deepali Caterers</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#e9bf90",
+                        "background": "#fdf8f8",
+                        "primary-container": "#1c1b1b",
+                        "on-secondary": "#ffffff",
+                        "inverse-primary": "#c8c6c5",
+                        "on-tertiary-fixed-variant": "#8e1217",
+                        "on-secondary-fixed-variant": "#5e411d",
+                        "on-tertiary-fixed": "#410003",
+                        "on-primary-container": "#858383",
+                        "surface-container-high": "#ebe7e6",
+                        "secondary": "#785832",
+                        "surface-dim": "#ddd9d8",
+                        "surface-container-highest": "#e5e2e1",
+                        "surface-container": "#f1edec",
+                        "on-error": "#ffffff",
+                        "tertiary-container": "#410003",
+                        "on-secondary-container": "#795932",
+                        "primary-fixed": "#e5e2e1",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "tertiary": "#000000",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#ffb3ad",
+                        "secondary-fixed": "#ffddb9",
+                        "surface-container-low": "#f7f3f2",
+                        "inverse-on-surface": "#f4f0ef",
+                        "on-tertiary-container": "#e3524d",
+                        "secondary-container": "#fed2a2",
+                        "on-surface-variant": "#444748",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed": "#1c1b1b",
+                        "surface-tint": "#5f5e5e",
+                        "on-surface": "#1c1b1b",
+                        "on-error-container": "#93000a",
+                        "primary": "#000000",
+                        "on-background": "#1c1b1b",
+                        "surface-container-lowest": "#ffffff",
+                        "outline": "#747878",
+                        "outline-variant": "#c4c7c7",
+                        "surface": "#fdf8f8",
+                        "surface-variant": "#e5e2e1",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed-variant": "#474646",
+                        "tertiary-fixed": "#ffdad6",
+                        "on-secondary-fixed": "#2b1700",
+                        "surface-bright": "#fdf8f8",
+                        "inverse-surface": "#313030"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin": "48px",
+                        "lg": "64px",
+                        "xl": "128px",
+                        "gutter": "24px",
+                        "unit": "4px",
+                        "md": "32px",
+                        "xs": "8px",
+                        "sm": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "label-caps": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "headline-lg": ["Playfair Display"],
+                        "body-md": ["Manrope"],
+                        "headline-xl-mobile": ["Playfair Display"],
+                        "headline-xl": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.15em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-xl-mobile": ["36px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Editorial & Typography Enhancements */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Manrope:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            /* Force the warm parchment background color requested */
+            background-color: #FAE5CD;
+            color: #121212;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .border-editorial {
+            border-color: #121212;
+        }
+
+        /* Leader lines for menus */
+        .menu-leader {
+            flex-grow: 1;
+            border-bottom: 1px dotted #121212;
+            margin: 0 12px;
+            position: relative;
+            top: -6px;
+        }
+
+        /* Hide scrollbar for horizontal scrolling nav */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .fade-in-up.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation (Shared Component JSON) -->
+<header class="bg-background/95 dark:bg-background/95 backdrop-blur-sm docked full-width top-0 sticky border-b border-outline-variant dark:border-outline z-50">
+<div class="flex justify-between items-center w-full px-12 py-6 max-w-[1440px] mx-auto">
+<div class="font-display-lg text-headline-md font-bold tracking-tighter text-primary dark:text-primary-fixed-dim">
+                DEEPALI CATERERS
+            </div>
+<nav class="hidden md:flex space-x-8">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-body-md text-body-md uppercase tracking-widest hover:opacity-80 transition-opacity duration-300" href="#">Heritage</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-body-md text-body-md uppercase tracking-widest hover:opacity-80 transition-opacity duration-300" href="#">Occasions</a>
+<a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary dark:border-primary-fixed-dim pb-1 font-body-md text-body-md uppercase tracking-widest hover:opacity-80 transition-opacity duration-300 opacity-70 transition-all" href="#">Menus</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors font-body-md text-body-md uppercase tracking-widest hover:opacity-80 transition-opacity duration-300" href="#">How it Works</a>
+</nav>
+<div class="hidden md:flex items-center space-x-4">
+<button class="font-label-caps text-label-caps border border-primary text-primary px-6 py-3 hover:bg-surface-container-high transition-colors">Order Catering</button>
+<button class="font-label-caps text-label-caps bg-primary text-on-primary px-6 py-3 hover:opacity-90 transition-opacity">Plan My Event</button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- 1. Hero Section: "A Menu for Every Milestone" -->
+<section class="relative pt-lg pb-xl px-margin md:px-margin max-w-[1440px] mx-auto overflow-hidden fade-in-up">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center min-h-[70vh]">
+<!-- Text Content -->
+<div class="col-span-1 md:col-span-5 md:col-start-1 z-10 flex flex-col justify-center pb-12 md:pb-0">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase mb-sm border-b border-editorial inline-block pb-2 max-w-max">Culinary Portfolio</span>
+<h1 class="font-display-lg text-display-lg text-primary mb-md mt-sm md:-mr-12 relative z-20">A Menu for Every<br/>Milestone.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg max-w-md">
+                    Curated selections that honor tradition while embracing contemporary elegance. From intimate housewarmings to grand royal weddings.
+                </p>
+<div>
+<a class="font-label-caps text-label-caps border-b border-editorial text-primary pb-1 hover:text-outline transition-colors inline-flex items-center gap-2" href="#explore-menu">
+                        EXPLORE THE COLLECTION <span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+</a>
+</div>
+</div>
+<!-- Hero Image -->
+<div class="col-span-1 md:col-span-8 md:col-start-5 h-[60vh] md:h-[80vh] relative">
+<img alt="Premium Indian Feast" class="w-full h-full object-cover border border-editorial" data-alt="A highly stylized, top-down editorial photograph of a lavish Indian feast laid out on a dark marble table. The scene features ornately plated dishes, brass serveware, rich curries, vibrant saffron biryani, and scattered rose petals. High-contrast lighting with deep shadows creating a moody, premium culinary journal aesthetic. Shot in natural, warm light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFK5THxJe_H_SEUMCwEHyrdmy85Zz8duhLhxtA-tpUgT2wZkx5xFpBcJfXspGPENv7CYhyC02Mg2P7Y4EueB7PXGLnFXAkN3NLznfaWkljLQkRNCayoDpHjUEKjOoyTd-PBvhmajH2nnewd4h5hg46KPw0hwqwPkWUzRtJ2WZ27U2avBr0f1uG6QG_JNIxs3TPXbC2lw4m0ehCUdX9tq5ffdt3uy3ho948-qpajn5t3HquhIgq40ZUCg"/>
+<!-- Decorative element -->
+<div class="absolute -bottom-8 -left-8 w-32 h-32 bg-primary flex items-center justify-center p-4">
+<span class="font-headline-md text-headline-md text-on-primary text-center leading-tight">Est.<br/>1995</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Category Navigation (Minimalist Horizontal) -->
+<section class="border-y border-editorial py-6 sticky top-[88px] bg-[#FAE5CD] z-40 transition-all duration-300" id="category-nav">
+<div class="max-w-[1440px] mx-auto px-margin">
+<nav class="flex items-center space-x-12 overflow-x-auto no-scrollbar py-2">
+<button class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1 whitespace-nowrap">SIGNATURES</button>
+<button class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap">VEGETARIAN</button>
+<button class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap">NON-VEGETARIAN</button>
+<button class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap">STARTERS</button>
+<button class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap">MAIN COURSE</button>
+<button class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap">RICE &amp; BIRYANI</button>
+<button class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap">SWEETS</button>
+</nav>
+</div>
+</section>
+<!-- 3. Featured Food: "The Signature Collection" (Asymmetric Editorial Layout) -->
+<section class="py-xl px-margin max-w-[1440px] mx-auto fade-in-up">
+<div class="mb-16">
+<h2 class="font-headline-xl text-headline-xl text-primary md:w-2/3">The Signature Collection</h2>
+<div class="w-24 border-b-2 border-editorial mt-6"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+<!-- Item 1: Biryani (Large offset image) -->
+<div class="col-span-1 md:col-span-7 mb-16 md:mb-0">
+<div class="relative h-[600px] mb-8 group">
+<img alt="Hyderabadi Dum Biryani" class="w-full h-full object-cover border border-editorial" data-alt="A close-up, dramatic editorial shot of steaming Hyderabadi Dum Biryani served in a traditional handi or brass pot. Long grains of basmati rice, tender pieces of meat, caramelized onions, and fresh mint leaves are visible. Warm, directional light highlights the textures and saffron hues. Premium dark culinary background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxbHP3-aoHWyphNobAdNldEgIGOyjemquQX0xefhdNkCcPdGVDNPfz1kpxmHl76v3imbDdZAvQmqFLtfjVnQPHH9YQ4h_ZGzNxSDdNiX68XYt4tEJd4x3l2EE2uiVGlOqlrCL8duAksg5MrOwvKtQQZZkmwU-vLLIsibFfQkBUVMJl8Yyir0UcEvHo10eU3ly584K_qwbk4HRSDJZjkkDWBQQd2dO_IWz7Ctd-3D3qbm1PstwLOued9Q"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<div class="flex items-start justify-between">
+<div class="max-w-md">
+<div class="inline-block border border-editorial px-2 py-1 mb-4">
+<span class="font-label-caps text-label-caps text-primary">HERITAGE RECIPE</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-2">Hyderabadi Dum Biryani</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Slow-cooked over charcoal in a sealed brass handi, our signature biryani weaves together fragrant long-grain basmati, tender marinated meat, and a proprietary blend of twenty-four spices passed down through three generations.
+                        </p>
+</div>
+</div>
+</div>
+<!-- Item 2: Veg Platter (Smaller, offset text-heavy) -->
+<div class="col-span-1 md:col-span-4 md:col-start-9 md:mt-32">
+<div class="h-[400px] mb-8 relative group">
+<img alt="Royal Veg Platter" class="w-full h-full object-cover border border-editorial" data-alt="An elegant, minimalist composition of a Royal Vegetarian Platter on a dark slate or ceramic plate. Neatly arranged portions of paneer tikka, stuffed mushrooms, delicate kebabs, and vibrant green mint chutney. Shot from directly above with sharp shadows, highlighting the geometric arrangement and premium quality of the ingredients." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcxREQ95a84c4SKgg5qTYFi-iAaE1KxCIsknawBtWJInsyUZDLORczVaU4sbsJdps6di9o42QROxKdfppRdpJpG1K7unHhp55n-B8aQbd5hmqPBtPEJiSrqdo1Wq9auFtK9HYPmdExo3zqDCMkLU-S21kBB4DtS_cT-IBOMnnhBaGk_mT_hPWBABhdS8hKKi7fAwtfQ3yGpjceOWbg1KxYCrPUgXsHwT5l2SBqxz2Ha4K1y2N2XNiC4g"/>
+</div>
+<div>
+<div class="inline-block border border-editorial px-2 py-1 mb-4">
+<span class="font-label-caps text-label-caps text-primary">VEGETARIAN EXCELLENCE</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">The Royal Veg Platter</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        A masterclass in texture and vegetarian flavor profiles. Featuring saffron-infused paneer tikka, delicate dahi ke kebab, and charred tandoori broccoli, served with our house-made mint and pomegranate chutney.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Dish Exploration: Traditional Menus (Bento/Journal Grid) -->
+<section class="py-lg px-margin max-w-[1440px] mx-auto bg-surface-container-low border border-editorial mx-margin mb-xl fade-in-up">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-editorial pb-6">
+<h2 class="font-headline-lg text-headline-lg text-primary">Curated Selections</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mt-4 md:mt-0 md:text-right">
+                Explore our foundational categories, designed to be layered and customized for your unique celebration.
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-px bg-editorial bg-primary">
+<!-- Traditional Starters - Text focus -->
+<div class="col-span-1 md:col-span-5 bg-[#FAE5CD] p-8 md:p-12 flex flex-col justify-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-4">CATEGORY I</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-6">Traditional Starters</h3>
+<div class="space-y-6">
+<div class="flex items-baseline">
+<span class="font-headline-md text-headline-md text-primary text-lg">Mutton Shikampuri Kebab</span>
+<div class="menu-leader"></div>
+<span class="font-body-md text-body-md">Spiced yogurt center</span>
+</div>
+<div class="flex items-baseline">
+<span class="font-headline-md text-headline-md text-primary text-lg">Paneer Malai Tikka</span>
+<div class="menu-leader"></div>
+<span class="font-body-md text-body-md">Cardamom cream</span>
+</div>
+<div class="flex items-baseline">
+<span class="font-headline-md text-headline-md text-primary text-lg">Crispy Corn Chili Pepper</span>
+<div class="menu-leader"></div>
+<span class="font-body-md text-body-md">Wok tossed</span>
+</div>
+</div>
+</div>
+<!-- Image Block -->
+<div class="col-span-1 md:col-span-7 h-[400px] md:h-auto bg-[#FAE5CD]">
+<img alt="Traditional Starters" class="w-full h-full object-cover" data-alt="A beautifully styled row of traditional Indian starters on an elongated wooden serving board. Featuring golden-brown kebabs, vibrantly charred paneer tikka, and small copper bowls holding various dipping sauces. Warm, inviting lighting against a neutral, textural background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaQBtYmroOo0crf0tuMQjytyHd0nx2CI5MA_6-A-m4PG9lXWA0QJA347eSR36jDZThydo_tvfCRP-pc2arY01WDq0LlqjH8tODLWQiBgNzC2kIEM8GqWk1kXVYYkuA4ZHMu7bLj8jiJlM21ysZw_HNqM1L16IGZxtagTelsz_j7nj65zlYrHxNK3lJS1XF5gWu_ma4_ksGu42QVy2zsPQHPPQ0Gd5hcwLhW5tq8j1jLyLfMIkXYOGdgQ"/>
+</div>
+<!-- Image Block -->
+<div class="col-span-1 md:col-span-4 h-[400px] md:h-auto bg-[#FAE5CD]">
+<img alt="Main Course Classics" class="w-full h-full object-cover" data-alt="A close-up shot of rich, creamy Dal Makhani served in a small copper bucket, garnished with a swirl of fresh cream and a sprig of coriander. Sitting next to a stack of perfectly charred, buttery garlic naan. Editorial food photography style with soft focus background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOnuSuZeIcr15QDcpKaAsTe6W4pXG8yMVqJOZ6rAWBXSt8R6SAvTVZhXa3BzaYrNkseGgJ9pHFFS0mppISDrWjjtgFtp5nMuYpVyJ7bN0yD-N6GwpI5tmWztUBIz_C4ppCmbUI-6-nweMs08VCaeoUxOrp3rU5PZBnl1W_s0nJMexe16bpLmwRFC8NrYmlvvdZPjaW9dqXp2sORq6prExialtCDQOO7iw739BCjWTVIx5YlyRVvqJpAg"/>
+</div>
+<!-- Main Course Classics - Text focus -->
+<div class="col-span-1 md:col-span-8 bg-[#FAE5CD] p-8 md:p-12">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-4">CATEGORY II</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-6">Main Course Classics</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+<div>
+<h4 class="font-headline-md text-headline-md text-primary text-lg mb-2">Dal Makhani (Signature)</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Black lentils simmered overnight on the tandoor with churned butter.</p>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-primary text-lg mb-2">Nalli Nihari</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Slow-cooked lamb shank in a marrow-rich, aromatic gravy.</p>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-primary text-lg mb-2">Dum Aloo Kashmiri</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Baby potatoes stuffed with paneer and dry fruits in a rich tomato gravy.</p>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-primary text-lg mb-2">Butter Chicken</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Charcoal roasted chicken tikka pulled and finished in a velvety fenugreek sauce.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. 'Build Your Menu' Interactive Section -->
+<section class="py-xl px-margin max-w-[1024px] mx-auto fade-in-up">
+<div class="text-center mb-12">
+<span class="font-label-caps text-label-caps text-primary border-b border-editorial pb-1 inline-block mb-4">CONCIERGE SERVICE</span>
+<h2 class="font-headline-xl text-headline-xl text-primary mb-4">Begin Your Curation</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mx-auto">
+                Tell us about your celebration, and our culinary directors will propose a foundational menu tailored to your vision.
+            </p>
+</div>
+<div class="border border-editorial p-8 md:p-12 relative">
+<!-- Decorative corners -->
+<div class="absolute top-0 left-0 w-4 h-4 border-t border-l border-primary -ml-2 -mt-2"></div>
+<div class="absolute top-0 right-0 w-4 h-4 border-t border-r border-primary -mr-2 -mt-2"></div>
+<div class="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-primary -ml-2 -mb-2"></div>
+<div class="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-primary -mr-2 -mb-2"></div>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Event Type -->
+<div class="relative">
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2">EVENT TYPE</label>
+<select class="w-full bg-transparent border-0 border-b border-editorial rounded-none px-0 py-2 font-body-lg text-body-lg text-primary focus:ring-0 focus:border-b-2 focus:border-primary appearance-none cursor-pointer">
+<option value="">Select Occasion...</option>
+<option value="wedding">Wedding Reception</option>
+<option value="housewarming">Housewarming (Gruhapravesam)</option>
+<option value="corporate">Corporate Gala</option>
+<option value="birthday">Milestone Birthday</option>
+<option value="other">Other Celebration</option>
+</select>
+<span class="material-symbols-outlined absolute right-0 bottom-2 text-primary pointer-events-none">expand_more</span>
+</div>
+<!-- Guest Count -->
+<div class="relative">
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2">GUEST COUNT</label>
+<input class="w-full bg-transparent border-0 border-b border-editorial rounded-none px-0 py-2 font-body-lg text-body-lg text-primary focus:ring-0 focus:border-b-2 focus:border-primary placeholder:text-outline-variant" placeholder="Approximate number" type="text"/>
+</div>
+<!-- Preference -->
+<div class="relative">
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2">PREDOMINANT PREFERENCE</label>
+<select class="w-full bg-transparent border-0 border-b border-editorial rounded-none px-0 py-2 font-body-lg text-body-lg text-primary focus:ring-0 focus:border-b-2 focus:border-primary appearance-none cursor-pointer">
+<option value="">Select Profile...</option>
+<option value="veg">Pure Vegetarian</option>
+<option value="mixed">Mixed (Veg &amp; Non-Veg)</option>
+<option value="jain">Jain Menu (No Onion/Garlic)</option>
+<option value="custom">Custom Diet</option>
+</select>
+<span class="material-symbols-outlined absolute right-0 bottom-2 text-primary pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="pt-6 flex justify-center">
+<button class="font-label-caps text-label-caps bg-primary text-on-primary px-8 py-4 hover:opacity-90 transition-opacity flex items-center gap-2" type="button">
+                        GENERATE MENU SUGGESTION <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</section>
+<!-- 6. CTA Section -->
+<section class="py-xl px-margin border-t border-editorial text-center fade-in-up">
+<h2 class="font-display-lg text-display-lg text-primary mb-6">Ready to curate your<br/>timeless menu?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-xl mx-auto">
+            Connect with our event specialists to begin designing a culinary experience that reflects your heritage and vision.
+        </p>
+<div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+<button class="font-label-caps text-label-caps bg-primary text-on-primary px-8 py-4 hover:opacity-90 transition-opacity w-full sm:w-auto">
+                PLAN MY EVENT
+            </button>
+<button class="font-label-caps text-label-caps border border-primary text-primary px-8 py-4 hover:bg-primary/5 transition-colors w-full sm:w-auto">
+                ORDER CATERING
+            </button>
+</div>
+</section>
+<!-- Footer (Shared Component JSON) -->
+<footer class="bg-surface-container-lowest dark:bg-surface-dim full-width border-t border-primary dark:border-outline">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-12 py-16 max-w-[1440px] mx-auto">
+<div class="col-span-1 md:col-span-2">
+<div class="font-display-lg text-headline-md text-primary dark:text-primary-fixed-dim mb-4">
+                    DEEPALI CATERERS
+                </div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-sm">
+                    © 2024 Deepali Caterers Hyderabad. A Legacy of Taste.
+                </p>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps text-primary mb-6 border-b border-editorial inline-block pb-1">COMPANY</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim underline transition-all focus:ring-1 focus:ring-outline" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim underline transition-all focus:ring-1 focus:ring-outline" href="#">Terms of Service</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim underline transition-all focus:ring-1 focus:ring-outline" href="#">Sustainability</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps text-primary mb-6 border-b border-editorial inline-block pb-1">CONNECT</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim underline transition-all focus:ring-1 focus:ring-outline" href="#">Contact Us</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim underline transition-all focus:ring-1 focus:ring-outline" href="#">Gallery</a></li>
+</ul>
+</div>
+</div>
+</footer>
+<!-- Simple JS for scroll animations & sticky nav effects -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Intersection Observer for fade-in animations
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in-up').forEach(element => {
+                observer.observe(element);
+            });
+
+            // Sticky Category Nav Shadow effect
+            const categoryNav = document.getElementById('category-nav');
+            if (categoryNav) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 400) {
+                        categoryNav.classList.add('shadow-md');
+                        categoryNav.style.borderColor = 'transparent';
+                    } else {
+                        categoryNav.classList.remove('shadow-md');
+                        categoryNav.style.borderColor = '#121212';
+                    }
+                });
+            }
+        });
+    </script>
+</body></html>

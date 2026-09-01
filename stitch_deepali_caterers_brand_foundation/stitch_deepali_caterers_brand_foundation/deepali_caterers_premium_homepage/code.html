@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Deepali Caterers - A Legacy of Taste</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#747878",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed": "#2b1700",
+                        "tertiary-container": "#410003",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#8e1217",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary": "#785832",
+                        "inverse-primary": "#c8c6c5",
+                        "secondary-container": "#fed2a2",
+                        "tertiary": "#000000",
+                        "on-tertiary-container": "#e3524d",
+                        "inverse-surface": "#313030",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#795932",
+                        "on-surface": "#1c1b1b",
+                        "primary": "#000000",
+                        "inverse-on-surface": "#f4f0ef",
+                        "on-surface-variant": "#444748",
+                        "on-background": "#1c1b1b",
+                        "surface-tint": "#5f5e5e",
+                        "surface-container": "#f1edec",
+                        "on-primary-container": "#858383",
+                        "background": "#fdf8f8",
+                        "surface-container-high": "#ebe7e6",
+                        "tertiary-fixed-dim": "#ffb3ad",
+                        "surface-variant": "#e5e2e1",
+                        "tertiary-fixed": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "surface-container-low": "#f7f3f2",
+                        "primary-container": "#1c1b1b",
+                        "on-primary-fixed": "#1c1b1b",
+                        "surface-container-highest": "#e5e2e1",
+                        "secondary-fixed-dim": "#e9bf90",
+                        "surface-dim": "#ddd9d8",
+                        "surface": "#fdf8f8",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#fdf8f8",
+                        "on-tertiary-fixed": "#410003",
+                        "on-primary-fixed-variant": "#474646",
+                        "outline-variant": "#c4c7c7",
+                        "secondary-fixed": "#ffddb9",
+                        "primary-fixed": "#e5e2e1",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#5e411d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "4px",
+                        "margin": "48px",
+                        "md": "32px",
+                        "xs": "8px",
+                        "sm": "16px",
+                        "xl": "128px",
+                        "lg": "64px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Manrope"],
+                        "headline-lg": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-xl-mobile": ["Playfair Display"],
+                        "body-md": ["Manrope"],
+                        "label-caps": ["Manrope"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "headline-xl": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-xl-mobile": ["36px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.15em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Essential overriding for sharp editorial aesthetic */
+        * { border-radius: 0 !important; }
+        .dotted-leader {
+            background-image: radial-gradient(circle, #000 1px, transparent 1.5px);
+            background-size: 8px 8px;
+            background-position: bottom;
+            background-repeat: repeat-x;
+        }
+    </style>
+</head>
+<body class="bg-background text-primary antialiased selection:bg-secondary-fixed selection:text-primary">
+<!-- TopNavBar (Shared Component) -->
+<header class="bg-background/95 backdrop-blur-sm border-b border-outline-variant flex justify-between items-center w-full px-12 py-6 max-w-[1440px] mx-auto sticky top-0 z-50">
+<a class="font-display-lg text-headline-md font-bold tracking-tighter text-primary" href="/">
+            DEEPALI CATERERS
+        </a>
+<nav class="hidden md:flex gap-gutter items-center font-body-md text-body-md uppercase tracking-widest">
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 transition-opacity duration-300" href="#">Heritage</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 transition-opacity duration-300" href="#">Occasions</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 transition-opacity duration-300" href="#">Menus</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 transition-opacity duration-300" href="#">How it Works</a>
+</nav>
+<div class="flex items-center gap-sm">
+<button class="hidden md:block font-label-caps text-label-caps tracking-widest border border-primary px-6 py-3 hover:bg-surface-container-low transition-colors">
+                Order Catering
+            </button>
+<button class="bg-primary text-on-primary font-label-caps text-label-caps tracking-widest px-6 py-3 hover:opacity-80 transition-opacity">
+                Plan My Event
+            </button>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="max-w-[1440px] mx-auto px-6 md:px-margin pt-xl pb-lg border-b border-primary">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 flex flex-col justify-center pr-lg">
+<h1 class="font-display-lg text-display-lg md:text-[88px] leading-none mb-md text-primary">
+                        A Legacy of Taste for Your Most Precious Moments.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-lg">
+                        Curating unforgettable culinary experiences in Hyderabad. We blend generations of traditional recipes with impeccable, modern service to elevate your celebrations.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary font-label-caps text-label-caps tracking-widest px-8 py-4 uppercase">
+                            Explore Menus
+                        </button>
+</div>
+</div>
+<div class="md:col-span-4 mt-lg md:mt-0 relative h-[600px] border border-primary">
+<img class="w-full h-full object-cover" data-alt="A highly stylized, editorial photograph of a lavishly plated traditional Indian wedding feast. The setting is elegant and minimalist, featuring a warm cream background, sharp shadows, and high contrast. The food is vibrant and exquisitely detailed, showcasing rich curries and delicate breads on fine china, evoking a sense of premium luxury hospitality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBL32KAjqt9yhyDxf5rCPekuGM5lY8xg2z5nbJo3hAv1FETnWIYbAAnaSRtjofglgqEX4Wz_WKr5eMpxpvkCc3ahNRAHzCuw6aQpYsRaFQEM-yb_-wZYB_v4B92jQRFzIsIl67a1WyBAwk5FR1TXj9fDcJuKmb6gg1LSoTquCo1mFrWM_Sw6NBhdEwdwRv4bUwIy9EsrLyx1vuYm2gnskIQbP5yKzrlK7NnpyMt-r49ITodgjh_o8mZ-A"/>
+</div>
+</div>
+</section>
+<!-- Trust / Heritage (Asymmetrical Layout) -->
+<section class="max-w-[1440px] mx-auto px-6 md:px-margin py-xl border-b border-primary">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-4 md:col-start-2">
+<div class="inline-block border border-primary px-3 py-1 mb-md">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-widest">Our Heritage</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-primary mb-sm">
+                        Rooted in Hyderabad. Focused on Perfection.
+                    </h2>
+</div>
+<div class="md:col-span-5 md:col-start-7 flex flex-col justify-end pb-sm">
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                        For over two decades, Deepali Caterers has been the cornerstone of Hyderabad's most prestigious events. Our commitment extends beyond exceptional taste; we pride ourselves on absolute punctuality, rigorous hygiene standards, and a deeply human approach to hospitality.
+                    </p>
+<a class="font-label-caps text-label-caps uppercase text-primary border-b border-primary pb-1 w-max hover:opacity-70 transition-opacity" href="#">Discover Our Story</a>
+</div>
+</div>
+</section>
+<!-- Signature Flavors / Best Sellers (Inspired by Image) -->
+<section class="max-w-[1440px] mx-auto px-6 md:px-margin py-xl bg-surface-container-low border-b border-primary">
+<div class="text-center mb-xl">
+<h2 class="font-display-lg text-display-lg text-primary">Our Best Sellers</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-xl max-w-5xl mx-auto">
+<!-- Menu Item 1 -->
+<div class="flex flex-col">
+<div class="w-full h-[300px] border border-primary mb-sm">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="A high-end editorial close-up photograph of a signature Indian dish, likely a rich Dum Biryani, served in a minimalist, polished brass bowl. The lighting is dramatic, casting sharp shadows on a warm, textured cream surface. Steam gently rises from the aromatic rice, highlighting the premium ingredients and saffron hues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCwtUg5JrKCoyFo31tELnmSDP2W2DikCg4zkO84MT-WrYX5Q7TWdZejUvt2XVdAQIxlpD_0P9ql1XrCxImneB3ZdVhDI7r1wSTXQqWUg2TyHQDLc-37gqMPODTrFxs6b9USZgn_d6eFqhbK1yjW2h71QlPEKrQTCmy8HEgnczQCll63XAKJu2hNDygljh6iwin_HMEPd4BPxE2e9so8YjLO-zCq_Uq3vS0CXS_jNVcYZRgJmbAuHh8ow"/>
+</div>
+<div class="flex justify-between items-baseline w-full mt-4">
+<h3 class="font-headline-md text-headline-md text-primary bg-surface-container-low pr-2 relative z-10">Hyderabadi Dum Biryani</h3>
+<div class="flex-grow dotted-leader mx-2 mb-2 relative z-0"></div>
+<span class="font-body-md text-body-md text-on-surface-variant bg-surface-container-low pl-2 relative z-10">Signature</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-sm">
+                        Slow-cooked fragrant basmati rice layered with marinated meat, saffron, and heirloom spices.
+                    </p>
+</div>
+<!-- Menu Item 2 -->
+<div class="flex flex-col md:mt-24">
+<div class="w-full h-[300px] border border-primary mb-sm">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="An elegant, top-down shot of a beautifully arranged vegetarian Indian thali on a slate grey table. The composition is asymmetrical and modern, featuring vibrant curries, delicate rotis, and fresh garnishes in small geometric bowls. The lighting is soft but directional, emphasizing the textures and rich colors of the premium culinary presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD881UdCRhmIVV5Ly066ahINKePqfR7FXDEXEDwGNFElr1bSj_K4cJcoltetghlDtvFb-lcElvx5BL9EN0WBtzFa1HQzj7piE4_eHXNdv1vL2hGASf2b-ZAUmiylCEHvjl54YAxabfwAV1NU9gV6wnS7HOGnTUa_BcqcEj6drb7rRCGtYazeNmK3ZeaV6df0SMxq90B5AwgDaqLcVVAWDpJLftyk6bhXx1QDS7mp0bUemUJ14ebFrRB5g"/>
+</div>
+<div class="flex justify-between items-baseline w-full mt-4">
+<h3 class="font-headline-md text-headline-md text-primary bg-surface-container-low pr-2 relative z-10">Royal Veg Platter</h3>
+<div class="flex-grow dotted-leader mx-2 mb-2 relative z-0"></div>
+<span class="font-body-md text-body-md text-on-surface-variant bg-surface-container-low pl-2 relative z-10">Classic</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-sm">
+                        A curated selection of our finest vegetarian delicacies, prepared with seasonal produce and rich gravies.
+                    </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-lowest border-t border-primary grid grid-cols-1 md:grid-cols-4 gap-gutter px-12 py-16 max-w-[1440px] mx-auto w-full">
+<div class="md:col-span-1">
+<h4 class="font-display-lg text-headline-md text-primary mb-6">DEEPALI CATERERS</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                © 2024 Deepali Caterers Hyderabad. A Legacy of Taste.
+            </p>
+</div>
+<div class="md:col-span-3 flex flex-col md:flex-row gap-lg md:justify-end font-body-md text-body-md">
+<div class="flex flex-col gap-4">
+<a class="text-on-surface-variant hover:text-primary transition-all" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-all" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="text-on-surface-variant hover:text-primary transition-all" href="#">Contact Us</a>
+<a class="text-on-surface-variant hover:text-primary transition-all" href="#">Gallery</a>
+<a class="text-on-surface-variant hover:text-primary transition-all" href="#">Sustainability</a>
+</div>
+</div>
+</footer>
+</body></html>

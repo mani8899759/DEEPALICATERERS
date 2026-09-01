@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Customer Dashboard - Deepali Caterers</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container": "#f1edec",
+                      "outline-variant": "#c4c7c7",
+                      "inverse-primary": "#c8c6c5",
+                      "on-secondary-fixed": "#2b1700",
+                      "surface-dim": "#ddd9d8",
+                      "on-error": "#ffffff",
+                      "surface": "#fdf8f8",
+                      "surface-container-low": "#f7f3f2",
+                      "on-tertiary-fixed-variant": "#8e1217",
+                      "primary-fixed": "#e5e2e1",
+                      "secondary": "#785832",
+                      "on-secondary": "#ffffff",
+                      "on-secondary-container": "#795932",
+                      "error-container": "#ffdad6",
+                      "on-secondary-fixed-variant": "#5e411d",
+                      "surface-container-highest": "#e5e2e1",
+                      "primary-container": "#1c1b1b",
+                      "on-tertiary-fixed": "#410003",
+                      "secondary-fixed-dim": "#e9bf90",
+                      "tertiary": "#000000",
+                      "surface-container-high": "#ebe7e6",
+                      "on-surface": "#1c1b1b",
+                      "on-primary-fixed-variant": "#474646",
+                      "tertiary-container": "#410003",
+                      "on-primary-fixed": "#1c1b1b",
+                      "on-primary": "#ffffff",
+                      "tertiary-fixed-dim": "#ffb3ad",
+                      "inverse-on-surface": "#f4f0ef",
+                      "secondary-container": "#fed2a2",
+                      "on-surface-variant": "#444748",
+                      "tertiary-fixed": "#ffdad6",
+                      "error": "#ba1a1a",
+                      "surface-variant": "#e5e2e1",
+                      "surface-container-lowest": "#ffffff",
+                      "primary": "#000000",
+                      "on-primary-container": "#858383",
+                      "surface-tint": "#5f5e5e",
+                      "on-tertiary": "#ffffff",
+                      "on-background": "#1c1b1b",
+                      "on-tertiary-container": "#e3524d",
+                      "outline": "#747878",
+                      "primary-fixed-dim": "#c8c6c5",
+                      "on-error-container": "#93000a",
+                      "surface-bright": "#fdf8f8",
+                      "background": "#fdf8f8",
+                      "secondary-fixed": "#ffddb9",
+                      "inverse-surface": "#313030"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "4px",
+                      "xl": "128px",
+                      "sm": "16px",
+                      "margin": "48px",
+                      "xs": "8px",
+                      "md": "32px",
+                      "gutter": "24px",
+                      "lg": "64px"
+              },
+              "fontFamily": {
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "headline-lg": [
+                              "Playfair Display"
+                      ],
+                      "headline-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "label-caps": [
+                              "Manrope"
+                      ],
+                      "headline-xl": [
+                              "Playfair Display"
+                      ],
+                      "headline-xl-mobile": [
+                              "Playfair Display"
+                      ],
+                      "body-lg": [
+                              "Manrope"
+                      ],
+                      "body-md": [
+                              "Manrope"
+                      ]
+              },
+              "fontSize": {
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "72px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.15em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-xl-mobile": [
+                              "36px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill-1 {
+            font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Editorial specific styles */
+        body {
+            background-color: #FAE5CD; /* Requested background */
+            color: #121212; /* Requested typography */
+        }
+        .ruled-border {
+            border-bottom: 1px solid #121212;
+        }
+        .editorial-outline {
+            border: 1px solid #121212;
+        }
+        .dotted-leader {
+            border-bottom: 1px dotted #121212;
+            flex-grow: 1;
+            margin: 0 10px;
+            position: relative;
+            top: -6px;
+        }
+      </style>
+</head>
+<body class="font-body-md text-body-md min-h-screen flex flex-col antialiased selection:bg-secondary-container selection:text-primary">
+<!-- Top Navigation Bar -->
+<nav class="bg-background/95 dark:bg-background/95 backdrop-blur-sm docked full-width top-0 sticky border-b border-outline-variant dark:border-outline flat no shadows z-50">
+<div class="flex justify-between items-center w-full px-12 py-6 max-w-[1440px] mx-auto hidden md:flex">
+<!-- Brand Logo -->
+<a class="font-display-lg text-headline-md font-bold tracking-tighter text-primary dark:text-primary-fixed-dim" href="#">
+                DEEPALI CATERERS
+            </a>
+<!-- Navigation Links -->
+<ul class="flex space-x-md">
+<li>
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors hover:opacity-80 duration-300" href="#">Heritage</a>
+</li>
+<li>
+<a class="font-body-md text-body-md uppercase tracking-widest text-primary dark:text-primary-fixed-dim border-b-2 border-primary dark:border-primary-fixed-dim pb-1 hover:opacity-80 transition-opacity duration-300" href="#">Occasions</a>
+</li>
+<li>
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors hover:opacity-80 duration-300" href="#">Menus</a>
+</li>
+<li>
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors hover:opacity-80 duration-300" href="#">How it Works</a>
+</li>
+</ul>
+<!-- Actions -->
+<div class="flex items-center space-x-gutter">
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-primary hover:opacity-80 transition-opacity duration-300" href="#">Order Catering</a>
+<a class="bg-primary text-on-primary px-6 py-3 font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary/90 transition-colors" href="#">Plan My Event</a>
+</div>
+</div>
+<!-- Mobile Nav Placeholder -->
+<div class="flex justify-between items-center w-full px-6 py-4 md:hidden">
+<a class="font-display-lg text-headline-lg-mobile font-bold tracking-tighter text-primary" href="#">
+                DEEPALI CATERERS
+            </a>
+<button aria-label="Menu">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<main class="flex-grow w-full max-w-[1440px] mx-auto px-6 md:px-margin py-md md:py-lg grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Header Section (Spans 10 cols, offset by 1) -->
+<header class="md:col-span-10 md:col-start-2 mb-lg ruled-border pb-6 flex flex-col md:flex-row justify-between items-end gap-6">
+<div>
+<p class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant mb-4">Your Culinary Journey</p>
+<h1 class="font-headline-xl text-headline-xl md:text-display-lg font-display-lg text-primary">Singhania &amp; Reddy Wedding Reception</h1>
+</div>
+<div class="flex flex-col md:items-end gap-4">
+<span class="editorial-outline px-4 py-2 font-label-caps text-label-caps uppercase tracking-widest text-primary inline-flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-green-600 block"></span> Active Booking
+                </span>
+<p class="font-body-md text-body-md text-on-surface-variant">Booking Ref: #DC-8842</p>
+</div>
+</header>
+<!-- Visual Status Tracker (Spans full 12 cols) -->
+<section class="col-span-1 md:col-span-12 mb-xl">
+<h2 class="font-headline-md text-headline-md text-primary mb-8">Journey Status</h2>
+<div class="relative w-full overflow-x-auto pb-6 scrollbar-hide">
+<div class="flex items-center justify-between min-w-[800px] relative px-4">
+<!-- Connecting Line -->
+<div class="absolute top-1/2 left-8 right-8 h-px bg-outline-variant -z-10 -translate-y-1/2"></div>
+<!-- Active Connecting Line (Progress) -->
+<div class="absolute top-1/2 left-8 w-[60%] h-px bg-primary -z-10 -translate-y-1/2"></div>
+<!-- Step 1: Completed -->
+<div class="flex flex-col items-center gap-4 relative z-10 w-32">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-lg" data-icon="check">check</span>
+</div>
+<span class="font-label-caps text-label-caps uppercase text-center text-primary">Enquiry Received</span>
+</div>
+<!-- Step 2: Completed -->
+<div class="flex flex-col items-center gap-4 relative z-10 w-32">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-lg" data-icon="check">check</span>
+</div>
+<span class="font-label-caps text-label-caps uppercase text-center text-primary">Discussion</span>
+</div>
+<!-- Step 3: Completed -->
+<div class="flex flex-col items-center gap-4 relative z-10 w-32">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-lg" data-icon="check">check</span>
+</div>
+<span class="font-label-caps text-label-caps uppercase text-center text-primary">Menu Finalized</span>
+</div>
+<!-- Step 4: Current -->
+<div class="flex flex-col items-center gap-4 relative z-10 w-32">
+<div class="w-16 h-16 bg-surface-container-lowest editorial-outline flex items-center justify-center text-primary shadow-sm -mt-2">
+<span class="material-symbols-outlined text-2xl fill-1" data-icon="bookmark">bookmark</span>
+</div>
+<span class="font-label-caps text-label-caps uppercase text-center text-primary font-bold">Booking Confirmed</span>
+</div>
+<!-- Step 5: Pending -->
+<div class="flex flex-col items-center gap-4 relative z-10 w-32">
+<div class="w-12 h-12 bg-surface-container-low border border-outline-variant rounded-full flex items-center justify-center text-outline-variant">
+<span class="material-symbols-outlined text-lg" data-icon="skillet">skillet</span>
+</div>
+<span class="font-label-caps text-label-caps uppercase text-center text-outline-variant">Preparation</span>
+</div>
+<!-- Step 6: Pending -->
+<div class="flex flex-col items-center gap-4 relative z-10 w-32">
+<div class="w-12 h-12 bg-surface-container-low border border-outline-variant rounded-full flex items-center justify-center text-outline-variant">
+<span class="material-symbols-outlined text-lg" data-icon="local_shipping">local_shipping</span>
+</div>
+<span class="font-label-caps text-label-caps uppercase text-center text-outline-variant">Ready / Dispatched</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Left Column: Event Overview & Actions (Spans 4 cols) -->
+<aside class="col-span-1 md:col-span-4 flex flex-col gap-12">
+<!-- Event Overview Card -->
+<section class="bg-[#F5DDC1]/50 p-8 editorial-outline relative">
+<!-- Decorative corner accents -->
+<div class="absolute top-0 left-0 w-4 h-4 border-t border-l border-primary -translate-x-1 -translate-y-1"></div>
+<div class="absolute top-0 right-0 w-4 h-4 border-t border-r border-primary translate-x-1 -translate-y-1"></div>
+<div class="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-primary -translate-x-1 translate-y-1"></div>
+<div class="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-primary translate-x-1 translate-y-1"></div>
+<h3 class="font-headline-md text-headline-md text-primary mb-6 ruled-border pb-4 flex items-center gap-3">
+<span class="material-symbols-outlined" data-icon="event">event</span> Event Details
+                </h3>
+<div class="space-y-6">
+<div>
+<p class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant mb-1">Date</p>
+<p class="font-headline-md text-body-lg text-primary">Saturday, 14th December 2024</p>
+</div>
+<div>
+<p class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant mb-1">Time</p>
+<p class="font-headline-md text-body-lg text-primary">7:00 PM Onwards</p>
+</div>
+<div>
+<p class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant mb-1">Location</p>
+<p class="font-headline-md text-body-lg text-primary">Taj Falaknuma Palace,<br/>Hyderabad</p>
+</div>
+<div>
+<p class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant mb-1">Guest Count</p>
+<p class="font-headline-md text-body-lg text-primary">450 Invited Guests</p>
+</div>
+</div>
+</section>
+<!-- Actions -->
+<section class="flex flex-col gap-4">
+<button class="bg-primary text-on-primary w-full py-4 px-6 font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary/90 transition-colors flex items-center justify-center gap-3">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span> Message Your Consultant
+                </button>
+<button class="bg-transparent editorial-outline text-primary w-full py-4 px-6 font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary/5 transition-colors flex items-center justify-center gap-3">
+<span class="material-symbols-outlined" data-icon="download">download</span> Download My Menu
+                </button>
+</section>
+</aside>
+<!-- Right Column: Menu & Updates (Spans 8 cols) -->
+<div class="col-span-1 md:col-span-8 flex flex-col gap-12 md:pl-8">
+<!-- Latest Updates -->
+<section>
+<h3 class="font-headline-md text-headline-md text-primary mb-6 ruled-border pb-4 flex items-center justify-between">
+<span>Journal Updates</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-widest">2 New</span>
+</h3>
+<div class="space-y-6 border-l border-primary pl-6 ml-3">
+<!-- Update Item -->
+<div class="relative">
+<div class="absolute -left-[30px] top-1 w-3 h-3 bg-[#FAE5CD] border border-primary rounded-full"></div>
+<p class="font-label-caps text-label-caps uppercase text-on-surface-variant mb-2">Today, 10:30 AM • From Ananya (Consultant)</p>
+<div class="bg-surface-container-lowest p-6 editorial-outline">
+<p class="font-body-md text-body-md text-primary">
+                                Namaskaram! We are delighted to confirm that your booking is fully secured. The Chef has requested we finalize the signature welcome drink variations by next Tuesday. Shall we schedule a brief call?
+                            </p>
+</div>
+</div>
+<!-- Update Item -->
+<div class="relative">
+<div class="absolute -left-[30px] top-1 w-3 h-3 bg-primary rounded-full"></div>
+<p class="font-label-caps text-label-caps uppercase text-on-surface-variant mb-2">Oct 12, 4:15 PM • System</p>
+<div class="bg-transparent p-2">
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                Menu iteration v3.0 has been marked as final and approved by client.
+                            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Summary (Editorial Restaurant Menu Style) -->
+<section class="bg-surface-container-lowest p-8 md:p-12 editorial-outline">
+<div class="text-center mb-12">
+<p class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant mb-4">Curated Selection</p>
+<h2 class="font-display-lg text-headline-xl md:text-display-lg text-primary">The Banquet Menu</h2>
+<div class="w-16 h-px bg-primary mx-auto mt-6"></div>
+</div>
+<!-- Starters -->
+<div class="mb-12">
+<h3 class="font-headline-md text-headline-md text-primary text-center mb-8 italic">Prarambh • Starters</h3>
+<ul class="space-y-6 max-w-2xl mx-auto">
+<li class="flex items-baseline">
+<div class="flex-grow">
+<span class="font-headline-md text-[20px] text-primary">Paneer Tikka Sofiyana</span>
+<p class="font-body-md text-sm text-on-surface-variant mt-1">Fennel-scented cottage cheese cooked in clay oven</p>
+</div>
+<div class="dotted-leader"></div>
+<span class="font-label-caps text-label-caps uppercase text-primary border border-primary px-2 py-1 text-[10px]">VEG</span>
+</li>
+<li class="flex items-baseline">
+<div class="flex-grow">
+<span class="font-headline-md text-[20px] text-primary">Shikampuri Kebab</span>
+<p class="font-body-md text-sm text-on-surface-variant mt-1">Finely minced lamb patties stuffed with hung curd and mint</p>
+</div>
+<div class="dotted-leader"></div>
+<span class="font-label-caps text-label-caps uppercase text-primary border border-primary px-2 py-1 text-[10px]">SIGNATURE</span>
+</li>
+</ul>
+</div>
+<!-- Mains -->
+<div class="mb-12">
+<h3 class="font-headline-md text-headline-md text-primary text-center mb-8 italic">Mukhya Bhoj • Mains</h3>
+<ul class="space-y-6 max-w-2xl mx-auto">
+<li class="flex items-baseline">
+<div class="flex-grow">
+<span class="font-headline-md text-[20px] text-primary">Kachche Gosht Ki Biryani</span>
+<p class="font-body-md text-sm text-on-surface-variant mt-1">Authentic Hyderabadi dum biryani cooked with marinated prime lamb</p>
+</div>
+<div class="dotted-leader"></div>
+<span class="font-label-caps text-label-caps uppercase text-primary border border-primary px-2 py-1 text-[10px]">HERITAGE</span>
+</li>
+<li class="flex items-baseline">
+<div class="flex-grow">
+<span class="font-headline-md text-[20px] text-primary">Dal Makhani</span>
+<p class="font-body-md text-sm text-on-surface-variant mt-1">Slow-cooked black lentils simmered overnight on charcoal</p>
+</div>
+<div class="dotted-leader"></div>
+<span class="font-label-caps text-label-caps uppercase text-primary border border-primary px-2 py-1 text-[10px]">VEG</span>
+</li>
+</ul>
+</div>
+<div class="text-center mt-8">
+<button class="bg-transparent border-b border-primary text-primary pb-1 font-label-caps text-label-caps uppercase tracking-widest hover:text-secondary transition-colors inline-flex items-center gap-2">
+                        View Full Menu <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer Component from JSON -->
+<footer class="bg-surface-container-lowest dark:bg-surface-dim full-width border-t border-primary dark:border-outline flat no shadows mt-xl">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-12 py-16 max-w-[1440px] mx-auto">
+<div class="col-span-1 md:col-span-2">
+<span class="font-display-lg text-headline-md text-primary dark:text-primary-fixed-dim block mb-4">DEEPALI CATERERS</span>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 max-w-md">Crafting extraordinary culinary experiences since 1995. Elevating celebrations with authentic flavors and impeccable service.</p>
+<p class="font-label-caps text-label-caps text-on-surface-variant">© 2024 Deepali Caterers Hyderabad. A Legacy of Taste.</p>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps uppercase tracking-widest text-primary mb-6">Explore</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim underline transition-all focus:ring-1 focus:ring-outline" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim underline transition-all focus:ring-1 focus:ring-outline" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps uppercase tracking-widest text-primary mb-6">Connect</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim underline transition-all focus:ring-1 focus:ring-outline" href="#">Contact Us</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim underline transition-all focus:ring-1 focus:ring-outline" href="#">Gallery</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim underline transition-all focus:ring-1 focus:ring-outline" href="#">Sustainability</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services &amp; Occasions | Deepali Caterers</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#8e1217",
+                    "secondary-container": "#fed2a2",
+                    "tertiary-fixed": "#ffdad6",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed-variant": "#474646",
+                    "surface": "#fdf8f8",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#c4c7c7",
+                    "on-secondary-container": "#795932",
+                    "surface-bright": "#fdf8f8",
+                    "surface-dim": "#ddd9d8",
+                    "surface-container-high": "#ebe7e6",
+                    "surface-container-highest": "#e5e2e1",
+                    "inverse-on-surface": "#f4f0ef",
+                    "tertiary-container": "#410003",
+                    "on-tertiary-fixed": "#410003",
+                    "secondary": "#785832",
+                    "secondary-fixed-dim": "#e9bf90",
+                    "inverse-surface": "#313030",
+                    "inverse-primary": "#c8c6c5",
+                    "on-surface-variant": "#444748",
+                    "on-surface": "#1c1b1b",
+                    "secondary-fixed": "#ffddb9",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#f1edec",
+                    "on-secondary-fixed-variant": "#5e411d",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f7f3f2",
+                    "on-primary-container": "#858383",
+                    "on-secondary-fixed": "#2b1700",
+                    "primary": "#000000",
+                    "on-tertiary-container": "#e3524d",
+                    "on-primary-fixed": "#1c1b1b",
+                    "surface-variant": "#e5e2e1",
+                    "surface-tint": "#5f5e5e",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "error-container": "#ffdad6",
+                    "outline": "#747878",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed": "#e5e2e1",
+                    "primary-container": "#1c1b1b",
+                    "on-background": "#1c1b1b",
+                    "tertiary-fixed-dim": "#ffb3ad",
+                    "tertiary": "#000000",
+                    "error": "#ba1a1a",
+                    "on-secondary": "#ffffff",
+                    "background": "#fdf8f8"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "md": "32px",
+                    "sm": "16px",
+                    "lg": "64px",
+                    "xs": "8px",
+                    "xl": "128px",
+                    "unit": "4px",
+                    "gutter": "24px",
+                    "margin": "48px"
+            },
+            "fontFamily": {
+                    "body-md": [
+                            "Manrope"
+                    ],
+                    "headline-xl": [
+                            "Playfair Display"
+                    ],
+                    "label-caps": [
+                            "Manrope"
+                    ],
+                    "body-lg": [
+                            "Manrope"
+                    ],
+                    "headline-md": [
+                            "Playfair Display"
+                    ],
+                    "headline-lg-mobile": [
+                            "Playfair Display"
+                    ],
+                    "headline-lg": [
+                            "Playfair Display"
+                    ],
+                    "display-lg": [
+                            "Playfair Display"
+                    ],
+                    "headline-xl-mobile": [
+                            "Playfair Display"
+                    ]
+            },
+            "fontSize": {
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-xl": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "label-caps": [
+                            "12px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "0.15em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "letterSpacing": "0.01em",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "28px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "display-lg": [
+                            "72px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-xl-mobile": [
+                            "36px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "600"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        /* Base styles enforcing editorial constraints */
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.primary');
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Enforce sharp corners everywhere per guidelines */
+        * {
+            border-radius: 0 !important;
+        }
+        
+        /* Material symbols base class */
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md selection:bg-secondary-fixed selection:text-primary">
+<!-- TopNavBar: Executing JSON Specs -->
+<nav class="bg-background/95 dark:bg-background/95 backdrop-blur-sm flex justify-between items-center w-full px-12 py-6 max-w-[1440px] mx-auto z-50 sticky top-0 full-width border-b border-outline-variant dark:border-outline flat">
+<a class="font-display-lg text-headline-md font-bold tracking-tighter text-primary dark:text-primary-fixed-dim uppercase" href="#">
+            DEEPALI CATERERS
+        </a>
+<!-- Desktop Navigation -->
+<ul class="hidden md:flex gap-8 font-body-md text-body-md uppercase tracking-widest items-center">
+<li>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors hover:opacity-80 transition-opacity duration-300" href="#">
+                    Heritage
+                </a>
+</li>
+<li>
+<!-- Active State -->
+<a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary dark:border-primary-fixed-dim pb-1 hover:opacity-80 transition-opacity duration-300 opacity-70 transition-all block" href="#">
+                    Occasions
+                </a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors hover:opacity-80 transition-opacity duration-300" href="#">
+                    Menus
+                </a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors hover:opacity-80 transition-opacity duration-300" href="#">
+                    How it Works
+                </a>
+</li>
+</ul>
+<!-- Actions -->
+<div class="hidden md:flex gap-4">
+<button class="border border-primary px-6 py-2 uppercase font-label-caps text-label-caps text-primary hover:bg-surface-container-high transition-colors">
+                Order Catering
+            </button>
+<button class="bg-primary text-on-primary px-6 py-2 uppercase font-label-caps text-label-caps hover:bg-inverse-surface transition-colors">
+                Plan My Event
+            </button>
+</div>
+<!-- Mobile Menu Trigger -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</nav>
+<!-- 2. Service Introduction Hero -->
+<header class="max-w-[1440px] mx-auto px-6 md:px-margin pt-xl pb-lg relative overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<!-- Asymmetrical Text Block -->
+<div class="md:col-span-5 md:col-start-2 space-y-md z-10 relative">
+<div class="inline-block border-b border-primary pb-1 mb-4">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary">Services &amp; Occasions</span>
+</div>
+<h1 class="font-display-lg text-headline-xl-mobile md:text-display-lg text-primary leading-tight">
+                    Celebrations<br/>Catered to<br/>Perfection
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md mt-6">
+                    For over two decades, we have been the culinary cornerstone of Hyderabad's most prestigious gatherings. Experience heritage flavors presented with unparalleled elegance, tailored to the unique spirit of your event.
+                </p>
+</div>
+<!-- Hero Imagery Overlap -->
+<div class="md:col-span-6 mt-lg md:mt-0 relative">
+<div class="relative w-full aspect-[4/5] border border-primary overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A high-end, editorial lifestyle photograph of a beautifully set Indian wedding banquet table. The table features pristine white linens, elegant fine china, crystal glassware, and subtle, sophisticated floral arrangements in muted, warm tones. The lighting is soft and cinematic, creating a luxurious, inviting atmosphere characteristic of a premium catering service in a well-lit, spacious venue." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAsnTC_fkJnNpdC6Irf7_tyl-Xl5o5h9ez1Erx6jt6bNxkykeWX-ta484oJ1REjBgjeZHeUM_LNMQserIzAnfoo8RWDUJH2A7L9saesshZeLI-KLkAHZnk2Rb_TrlumNm2LM2KVqt0IXwr62gQJO2zNIFP-rufc5WBdwCx6UpX2NmpAJZiM27_GpNTZebuA86noorpill6m3_OVSib3-nU5XKfo3aRK5z1pz-Q6RNGDTAb2f544VM2hw"/>
+</div>
+<!-- Editorial floating element -->
+<div class="absolute -bottom-8 -left-8 md:-bottom-12 md:-left-12 bg-surface border border-primary p-6 w-48 hidden md:flex flex-col justify-center shadow-none">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant mb-2">Est. 1998</span>
+<span class="font-headline-md text-headline-md text-primary leading-tight">A Legacy of Taste in Hyderabad</span>
+</div>
+</div>
+</div>
+</header>
+<!-- 3. 'Choose Your Occasion' Section -->
+<main>
+<!-- Intro Divider -->
+<section class="max-w-[1440px] mx-auto px-6 md:px-margin py-xl border-t border-primary">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+<div class="md:col-span-4">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Curated Experiences</span>
+</div>
+<div class="md:col-span-7 font-headline-xl text-headline-lg-mobile md:text-headline-xl text-primary">
+                    From monumental unions to intimate milestones, our bespoke service adapts seamlessly to the scale and significance of your gathering.
+                </div>
+</div>
+</section>
+<!-- Weddings & Receptions (Scale & Grandeur) -->
+<section class="max-w-[1440px] mx-auto px-6 md:px-margin py-lg grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7 relative h-[600px] border border-primary">
+<img class="w-full h-full object-cover absolute inset-0" data-alt="A wide-angle, highly detailed photograph of an extravagant Indian wedding reception buffet setup. The scene showcases long tables draped in luxurious fabrics, laden with gleaming copper and silver chafing dishes containing traditional delicacies. The background features grand, elegant architectural details of a banquet hall, illuminated by warm, ambient lighting that highlights the scale and opulence of the event." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPb-Sanj5Yjv5o9QKoPBnLLA-id6lddLwtJYglhubCBV9ybTr56VD3R_35YX4I09P_C14CMOuEhoHTly36JgKTq_V5TgU3y9quazC2oyctwpTqocQNf4y02uL-0lIFAvs4uHvzKOP0lA5z525YCDmrUgHfGRCuXo9nzYkvLQgJZUklCXmluC8ACWvYJrgQ73-Jd5KfUr2sB6mLIPSsQtoQOnZcusWlJZ1U7si-ubRH8GKbYxnneCdSwA"/>
+<div class="absolute top-4 left-4 bg-surface px-3 py-1 border border-primary">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary">01</span>
+</div>
+</div>
+<div class="md:col-span-4 md:col-start-9 space-y-6 pt-8 md:pt-0">
+<div class="inline-block border border-primary px-3 py-1">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary">Signature Service</span>
+</div>
+<h2 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-primary">Grand Weddings &amp; Receptions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    We handle the scale, so you can enjoy the moment. Impeccable timing, expansive customizable menus, and a visual presentation that matches the inherent grandeur of your special day.
+                </p>
+<div class="pt-4">
+<button class="group inline-flex items-center gap-2 border-b border-primary pb-1 font-label-caps text-label-caps uppercase tracking-widest text-primary hover:text-secondary transition-colors">
+                        Explore Wedding Menus 
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Housewarmings & Family Functions (Intimate) -->
+<section class="max-w-[1440px] mx-auto px-6 md:px-margin py-xl grid grid-cols-1 md:grid-cols-12 gap-gutter items-center bg-surface-container-low">
+<div class="md:col-span-4 md:col-start-2 space-y-6 order-2 md:order-1">
+<div class="inline-block border border-primary px-3 py-1">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary">Bespoke Gatherings</span>
+</div>
+<h2 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-primary">New Beginnings &amp; Family Functions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Bringing the authentic taste of home to your most precious family moments. We specialize in intimate layouts, nostalgic regional flavors, and warm, unobtrusive service that feels like family.
+                </p>
+</div>
+<div class="md:col-span-5 md:col-start-7 relative order-1 md:order-2 mb-8 md:mb-0 h-[500px]">
+<div class="absolute inset-0 border border-primary translate-x-4 translate-y-4 hidden md:block z-0 bg-surface"></div>
+<img class="w-full h-full object-cover border border-primary relative z-10" data-alt="A warm, intimate photograph capturing a family gathering centered around a beautifully arranged dining spread in a modern, well-lit living space. The table features an assortment of homestyle Indian dishes served in elegant ceramic bowls. The mood is joyful and relaxed, with natural sunlight streaming through large windows, creating a soft, welcoming, and premium domestic aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcV9kurgZxgi2rG0MFtdPa-Kqbj9cJcxKR-gF3eLbl2zxKzZri_EKKI3pbrS3uZbg6LBPsfCn8sm9WBp-tFdV5aa7KInQ6ak3V9MIXbnMhXJfFU5SQeMgU1dSc9NUy6jv6bpeT9OcgQfTpVqh430Gjv-b_tz7YB2rgpcwenCHU4BLcpXUXYn2eONpWJ4iVOwD5CQ1EY2VCnbuoW1PK7QzYfLYgyK4tqk6k8PRK1PBvE2PY6nYtSs2eHQ"/>
+<div class="absolute top-4 right-4 bg-surface px-3 py-1 border border-primary z-20">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary">02</span>
+</div>
+</div>
+</section>
+<!-- Small Gatherings & Socials -->
+<section class="max-w-[1440px] mx-auto px-6 md:px-margin py-xl border-b border-primary">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-4">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Small Gatherings &amp; Corporate Socials</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Premium culinary experiences scaled perfectly for boardroom lunches, boutique brand events, and private high-tea soirées.</p>
+</div>
+<div class="md:col-span-7 md:col-start-6 grid grid-cols-1 sm:grid-cols-2 gap-0 border border-primary divide-y sm:divide-y-0 sm:divide-x divide-primary">
+<div class="p-8 space-y-4 bg-surface hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-3xl text-primary font-light">local_cafe</span>
+<h3 class="font-headline-md text-headline-md text-primary">High-Tea &amp; Snacks</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Curated savory bites and artisanal sweets for refined afternoon gatherings.</p>
+</div>
+<div class="p-8 space-y-4 bg-surface hover:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-3xl text-primary font-light">work</span>
+<h3 class="font-headline-md text-headline-md text-primary">Corporate Luncheons</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Professional, swift, and sophisticated meal setups designed for the workplace.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Food Expertise Section (Bento/Asymmetric Grid) -->
+<section class="max-w-[1440px] mx-auto px-6 md:px-margin py-xl">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-lg items-end">
+<div class="md:col-span-6">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant block mb-4">The Deepali Standard</span>
+<h2 class="font-display-lg text-headline-xl-mobile md:text-headline-xl text-primary">Culinary Mastery</h2>
+</div>
+<div class="md:col-span-5 md:col-start-8">
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Decades of refining both vegetarian and non-vegetarian traditions allow us to offer unparalleled menu flexibility. We craft feasts that honor diverse guest lists without compromising on authenticity or richness.
+                    </p>
+</div>
+</div>
+<!-- Asymmetric Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter h-auto md:h-[700px]">
+<!-- Tall Veg Image -->
+<div class="md:col-span-4 h-[400px] md:h-full relative border border-primary group overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A close-up, high-resolution food photography shot of a meticulously plated traditional Indian vegetarian thali. The arrangement features vibrant, richly colored curries, perfectly cooked basmati rice, and fresh naan bread in small, polished brass bowls resting on a banana leaf. The lighting is crisp and directional, emphasizing the textures and spices, set against a dark, moody background for contrast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-SjVYIWT7RaFOc83hcr3TK3YiliC8d37-IsmYfA2iYxKHvvIkbfvP-4LSJ-ivsfSEY4oROkLTWF81NgCZWQrpK3FhWDBHGAOUPzYB6EJo86Q3kgxo6F0vMgYi4wCi1Hz35vaOOKScfFYbRZJRHRCGiNJ-ZEw6SGArwHQGQXuPgWnzDBZtUlh3dLOjuU9Q4Lg2x-ZFGDUhQfGSPO5g2hBEjjT2qauQo42KYpziszp7NfISwsojQZCy0g"/>
+<div class="absolute bottom-6 left-6 bg-surface border border-primary px-4 py-2 shadow-none">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary">Vegetarian Mastery</span>
+</div>
+</div>
+<div class="md:col-span-8 flex flex-col gap-gutter h-full">
+<!-- Wide Non-Veg Image -->
+<div class="h-[300px] md:h-[400px] relative border border-primary group overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An appetizing, high-end culinary photograph of an authentic Hyderabadi Biryani served in an ornate, traditional clay pot. The dish is garnished with golden fried onions, fresh mint, and tender pieces of meat, exuding steam. The composition is tight and focused, using dramatic side lighting to highlight the rich, warm colors and intricate details of the food, set on a textured, dark wooden table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKYs7hBSjAfF45RIWV-aPXQ9iAhGFE8MQ61QeDmZOmxLkJtOL0-LkY0EgpNVF7hsWiIk2D5SULx6SbMghobPGKtlmEVNnzN0rCBCISeYYUfS5BAR2B5FMFaD_46Tl_YMFiD3lzw6-MCNkaddfiNuNa47BqtL1WdzsqiddPwnukArytTi6zgLdXaJW3u1wX3-JP_tdDJwaZNnd_fqpnSbXbPdvWfw8yG2t-cFZhfI7n0rSXn-6FGE1meQ"/>
+<div class="absolute bottom-6 left-6 bg-surface border border-primary px-4 py-2 shadow-none">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary">Awadhi &amp; Hyderabadi Heritage</span>
+</div>
+</div>
+<!-- Bottom Split -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter flex-grow">
+<!-- Text Module -->
+<div class="bg-surface-container-high border border-primary p-8 flex flex-col justify-center">
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Total Menu Flexibility</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">We meticulously customize every menu to accommodate strict dietary preferences—from Jain preparations to allergy-sensitive options—ensuring every guest feels esteemed.</p>
+</div>
+<!-- Detail Image -->
+<div class="relative border border-primary min-h-[250px] overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A top-down, minimalist editorial photograph showing a chef's hands delicately placing a final garnish on an exquisite, modern Indian fusion appetizer. The dish sits on a pristine, minimalist white rectangular plate. The surrounding surface is a clean, lightly textured stone countertop with subtle, soft natural lighting, conveying precision, culinary expertise, and contemporary elegance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6Z8fewNufl8hC-Oa1jzQHn_dnzwTjl3AXA9tBA5wAs-r0SiSJrXyIc44yfLcXuduOrJvJQzwtIxbVQdYTdBKRp3AHt5bjNVywixhKcM2BSuqn3TBayh1PssvqQ8CfaRuV0Hr2vzMJdRMRCx05lf5QO8VRusG2UbjWGcW6WcWKvNVMrksYzpEX9Urmsc_OCaA6jznTRTAqLbNWSDQtX_xZ6nwd3S_Tl2vU4mBfugLIluQc2-jJhW44lA"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Service & Delivery (Horizontal Storytelling) -->
+<section class="max-w-[1440px] mx-auto px-6 md:px-margin py-xl bg-surface-container-lowest">
+<div class="mb-lg text-center">
+<h2 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-primary">The Execution</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 border-y border-primary divide-y md:divide-y-0 md:divide-x divide-primary">
+<!-- Pillar 1 -->
+<div class="p-8 md:p-12 flex flex-col items-start gap-6 hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl" data-weight="fill">schedule</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Unwavering Punctuality</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Time is the invisible essence of hospitality. Our logistical precision ensures your feast is ready and radiant precisely when expected.</p>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="p-8 md:p-12 flex flex-col items-start gap-6 hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl" data-weight="fill">verified</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Pristine Hygiene</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">From our centralized kitchens to your venue, rigorous, non-negotiable standards dictate every step of our culinary process.</p>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="p-8 md:p-12 flex flex-col items-start gap-6 hover:bg-surface-container-low transition-colors bg-surface">
+<span class="material-symbols-outlined text-primary text-4xl" data-weight="fill">room_service</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Full Service or Delivery</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Choose between our discreet, elegant waitstaff for full banquet service, or precise drop-off delivery for private, self-managed events.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Social Proof / Trust -->
+<section class="max-w-[1440px] mx-auto px-6 md:px-margin py-xl flex justify-center border-b border-primary">
+<div class="max-w-4xl text-center flex flex-col items-center">
+<span class="material-symbols-outlined text-outline text-5xl mb-8">format_quote</span>
+<p class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-primary leading-tight mb-8">
+                    "The presentation was as flawless as the flavors. Deepali didn't just cater our wedding; they orchestrated a culinary experience our guests still talk about."
+                </p>
+<div class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant flex items-center gap-4">
+<span class="w-8 h-[1px] bg-outline-variant block"></span>
+                    The Reddy Family, Jubilee Hills
+                    <span class="w-8 h-[1px] bg-outline-variant block"></span>
+</div>
+</div>
+</section>
+<!-- 7. Final CTA -->
+<section class="max-w-[1440px] mx-auto px-6 md:px-margin py-xl text-center flex flex-col items-center">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant mb-6">Begin the Journey</span>
+<h2 class="font-display-lg text-headline-xl-mobile md:text-display-lg text-primary mb-10 max-w-2xl leading-tight">Ready to curate your timeless menu?</h2>
+<div class="flex flex-col sm:flex-row gap-6 w-full sm:w-auto">
+<button class="bg-primary text-on-primary px-10 py-4 uppercase font-label-caps text-label-caps tracking-widest hover:bg-inverse-surface transition-colors w-full sm:w-auto">
+                    Plan My Event
+                </button>
+<button class="border border-primary text-primary px-10 py-4 uppercase font-label-caps text-label-caps tracking-widest hover:bg-surface-container-high transition-colors w-full sm:w-auto">
+                    Explore The Menu
+                </button>
+</div>
+</section>
+</main>
+<!-- 8. Footer: Executing JSON Specs -->
+<footer class="bg-surface-container-lowest dark:bg-surface-dim full-width border-t border-primary dark:border-outline flat grid grid-cols-1 md:grid-cols-4 gap-gutter px-12 py-16 max-w-[1440px] mx-auto font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant z-10 relative">
+<!-- Brand -->
+<div class="md:col-span-1 flex flex-col justify-between">
+<div class="font-display-lg text-headline-md text-primary dark:text-primary-fixed-dim uppercase tracking-tighter font-bold mb-6">
+                DEEPALI CATERERS
+            </div>
+<div class="text-sm mt-auto pt-8 md:pt-0">
+                © 2024 Deepali Caterers Hyderabad. A Legacy of Taste.
+            </div>
+</div>
+<!-- Links -->
+<div class="md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4">
+<a class="hover:text-primary dark:hover:text-primary-fixed-dim underline transition-all focus:ring-1 focus:ring-outline w-fit" href="#">Privacy Policy</a>
+<a class="hover:text-primary dark:hover:text-primary-fixed-dim underline transition-all focus:ring-1 focus:ring-outline w-fit" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="hover:text-primary dark:hover:text-primary-fixed-dim underline transition-all focus:ring-1 focus:ring-outline w-fit" href="#">Contact Us</a>
+<a class="hover:text-primary dark:hover:text-primary-fixed-dim underline transition-all focus:ring-1 focus:ring-outline w-fit" href="#">Gallery</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="hover:text-primary dark:hover:text-primary-fixed-dim underline transition-all focus:ring-1 focus:ring-outline w-fit" href="#">Sustainability</a>
+</div>
+</div>
+</footer>
+</body></html>
