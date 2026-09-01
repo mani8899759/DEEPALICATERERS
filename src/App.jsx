@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import ConsultationModal from './components/layout/ConsultationModal';
+import BrandReveal from './components/layout/BrandReveal';
 
 import Home from './pages/Home';
 import Occasions from './pages/Occasions';
@@ -72,6 +73,9 @@ export default function App() {
 
   return (
     <div className="min-h-screen flex flex-col bg-background text-primary selection:bg-secondary selection:text-white">
+      {/* 2.5-Second Luxury Opening Brand Reveal Overlay */}
+      <BrandReveal />
+
       {/* Top Main Navigation Header */}
       <Navbar
         activePage={activePage}
